@@ -1,0 +1,53 @@
+/* ==========================================================================
+   Bright Dracula-inspired Theme
+   ========================================================================== */
+
+/* Colors */
+$text-color: #282a36 !default; /* Dark text color */
+$muted-text-color: #6272a4 !default; /* Muted text color */
+$primary-color: #bd93f9 !default; /* Primary color */
+$border-color: #48ad68 !default; /* Border color */
+$footer-background-color: #825988 !default; /* Light background */
+$link-color: #5166a7 !default; /* Link color */
+$masthead-link-color: #44475a !default; /* Masthead link color */
+$masthead-link-color-hover: #ff79c6 !default; /* Masthead link hover color */
+$navicon-link-color-hover: #f8f8f2 !default; /* Navicon link hover color */
+
+/* Dracula syntax highlighting (base16) */
+$base00: #f8f8f2 !default; /* Light background */
+$base01: #f8f8f2 !default;
+$base02: #f8f8f2 !default;
+$base03: #f8f8f2 !default;
+$base04: #44475a !default; /* Dark text for code blocks */
+$base05: #282a36 !default; /* Dark text */
+$base06: #282a36 !default;
+$base07: #f8f8f2 !default;
+$base08: #ff5555 !default;
+$base09: #ff79c6 !default;
+$base0a: #f1fa8c !default;
+$base0b: #50fa7b !default;
+$base0c: #8be9fd !default;
+$base0d: #bd93f9 !default;
+$base0e: #ff79c6 !default;
+$base0f: #f8f8f2 !default;
+
+.page__content {
+  .notice,
+  .notice--primary,
+  .notice--info,
+  .notice--warning,
+  .notice--success,
+  .notice--danger {
+    color: $text-color;
+  }
+}
+
+.page__footer {
+  background-color: $footer-background-color !important; /* Light background */
+  color: $text-color !important; /* Dark text for readability */
+}
+
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa {
+  color: inherit;
+}
