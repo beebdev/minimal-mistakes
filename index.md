@@ -4,7 +4,7 @@ author_profile: true
 ---
 > I'm a research engineer at [Audinate](https://www.audinate.com/) and a casual academic at [UNSW CSE](https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering). I previously worked with [Prof. Sri Parameswaran](https://www.sydney.edu.au/engineering/about/our-people/academic-staff/sri-parameswaran.html) and [Dr. Hasindu Gamarachchi](https://www.unsw.edu.au/staff/hasindu-gamaarachchi) in the [Embedded Systems Research Group](https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering/our-research/research-groups/embedded-systems) at UNSW Sydney.
 >
-> With the ongoing demand of processing throughput from big-data applications like machine learning and computational bioinformatics, designing domain-specific computing systems are important in order to keep up with the trend of data size. I am interested in the cross intersection of computer architecture and computer systems with the goal of improving the processing performance of systems. I like to get hands-on, and my work spans across hardware acceleration, embedded systems, operating systems, computer networks applied on cross discipines such as bioinformatics and audio over IP.
+> With the ongoing demand of processing throughput from big-data applications like machine learning and computational bioinformatics, designing domain-specific computing systems are important in order to keep up with the trend of data size. I am interested in the cross intersection of computer architecture and computer systems with the goal of improving the processing performance of systems. I like to get hands-on, and my work spans across hardware acceleration, embedded systems, operating systems, computer networks applied on cross disciplines such as bioinformatics and audio over IP.
 
 # Experience
 <!-- ===== Audinate ===== -->
@@ -35,7 +35,7 @@ B.Eng. (Honours) in Computer Engineering <span style="float:right;">*Feb 2018 - 
 # Honours and Awards
 **First Class Honours**, UNSW B.Eng. <span style="float:right;">*2021*</span>\\
 **Outstanding Undergraduate Thesis**, UNSW School of CSE <span style="float:right;">*2021*</span>\\
-**Faculy of Engineering Dean's Honours List**, UNSW <span style="float:right;">*2018, 2019, 2020*</span>
+**Faculty of Engineering Dean's Honours List**, UNSW <span style="float:right;">*2018, 2019, 2020*</span>
 
 
 # Teaching experience
