@@ -13,6 +13,38 @@ In 2022 T3, I had the chance to help re-design the COMP3601 Design Project A cou
 
 Fast-forwarding to 2023, the course has been reused, and although I am no longer officially part of the course, I was invited to share my insights on ***how to do this project right***. You can find my slides [here](/assets/files/COMP3601_23T3_how-to-do-this-project-right.pdf).
 
+<a href="#" class="btn btn--primary" id="embedPDFButton">Toggle Slides</a>
+
+<div id="pdfContainer"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Get a reference to the button and the PDF container div
+  var embedPDFButton = document.getElementById("embedPDFButton");
+  var pdfContainer = document.getElementById("pdfContainer");
+  var embedded = false;
+
+  // Add a click event listener to the button
+  embedPDFButton.addEventListener("click", function() {
+    if (embedded) {
+      // If the PDF is already embedded, remove it
+      pdfContainer.innerHTML = "";
+      embedded = false;
+    } else {
+      // If the PDF is not embedded, create the iframe
+      var iframe = document.createElement("iframe");
+      iframe.src = "/assets/files/COMP3601_23T3_how-to-do-this-project-right.pdf";
+      iframe.style.width = "718px";
+      iframe.style.height = "700px";
+      iframe.frameBorder = "0";
+
+      // Insert the iframe into the PDF container
+      pdfContainer.appendChild(iframe);
+      embedded = true;
+    }
+  });
+});
+</script>
 
 # Historical context
 Previous years we had very different projects. When I did the course as a student in 2020, we were asked to develop an IR decoding box which can be used to control software for multimedia playback. We were provided with a [Digilent Nexys A7](https://digilent.com/shop/nexys-a7-fpga-trainer-board-recommended-for-ece-curriculum/) board, some electronics components such as IR receiver diodes, ADCs, potentiometers and some documentation resources for transferring data from the Nexys FPGA to a host machine. It was a fun project. My group chose to not use the *retro-styled* software protocol (I can't even recall the name..) and integrated an ESP32 MCU to directly interface with the FPGA dev kit through SPI via the PMOD pins. There were physical controls and our system supported a few common IR protocols used in household remotes. We hosted a mini webserver on the ESP32 (using SPIFFS :P) for media playback and control which was pretty cool! For those interested, the source code of our project can be found [here](https://github.com/beebdev/COMP3601-20T3-Brown).
