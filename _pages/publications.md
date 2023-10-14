@@ -15,7 +15,7 @@ classes: wide
 ## Dissertation
 **Hardware accelerated real-time selective genome sequencing.**\\
 <ins>Po Jui Shih</ins>\\
-*B.Eng. Honours Thesis, UNSW Sydney, Dec 2021.*
+*B.Eng. Honours Thesis, UNSW Sydney*, Dec 2021.
 
 
 
