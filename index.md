@@ -48,18 +48,23 @@ Academic Tutor, 48 students <span style="float:right;"> *21T3*</span>
 **[DESN2000](https://www.handbook.unsw.edu.au/undergraduate/courses/2023/DESN2000?year=2023) Eng. Design and Prof. Practice (COMP)** <span style="float:right;"> UNSW Sydney</span>\\
 Academic Tutor & Guest Lecturer, 51 students <span style="float:right;"> *23T2*</span>
 
-**[COMP2121](https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP2121?year=2020) Microprocessor and Interfacing** <span style="float:right;"> UNSW Sydney</span>\\
+**[COMP2121](https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP2121?year=2020) Microprocessors     and Interfacing** <span style="float:right;"> UNSW Sydney</span>\\
 Academic Tutor, 43 students <span style="float:right;"> *20T1*</span>
 
-**[COMP1521](https://www.handbook.unsw.edu.au/undergraduate/courses/2021/COMP1521/?year=2021) Computer System Fundamentals** <span style="float:right;"> UNSW Sydney</span>\\
+**[COMP1521](https://www.handbook.unsw.edu.au/undergraduate/courses/2021/COMP1521/?year=2021) Computer Systems Fundamentals** <span style="float:right;"> UNSW Sydney</span>\\
 Academic Tutor, 46 students <span style="float:right;"> *21T2*</span>
 
 > \* "Academic Tutor" at UNSW is equivalent to "Teaching Assistant"
 
 
 # Advising
-Katelyn Mak (with H. Gamaarachchi), *UNSW Honours Thesis* <span style="float:right;">2023 - present</span>
+Katelyn Mak (with H. Gamaarachchi), *UNSW Honours Thesis* <span style="float:right;">*2023 - present*</span>
 
-# Professional Service
+# Professional Services
 **External Reviewer**\\
-ASP-DAC<span style="float:right;">2024</span>
+ASP-DAC<span style="float:right;">*2024*</span>
+
+# Extracurricular Activities
+
+**[UNSW CSESoc](https://www.csesoc.unsw.edu.au/) Peer Mentor** <span style="float:right;">*2021*</span>\\
+**[UNSW CSESoc](https://www.csesoc.unsw.edu.au/) Media Subcommittee** <span style="float:right;">*2019*</span>
