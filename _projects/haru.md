@@ -9,10 +9,11 @@ toc_sticky: true
 order: 1
 ---
 
+Github Repo Link: [https://github.com/beebdev/HARU](https://github.com/beebdev/HARU)
+{: .notice--info}
+
 HARU (Hardware Accelerated Read Until) is a heterogenous compute solution for Oxford Nanopore Technologies' adaptive sampling (also known as selective sequencing and [Read Until](https://nanoporetech.com/resource-centre/read-until-adaptive-sampling)). Read Until allows genomic reads to be analyzed in real-time and abandoned halfway, if not belonging to a genomic region of 'interest'. HARU takes advantage of heterogenous edge compute platforms and provide hardware acceleration using reconfigurable hardware on an Multiprocessor system on a chip  (MPSoC). 
 
-
-> Link to Github repo: [https://github.com/beebdev/HARU](https://github.com/beebdev/HARU)\\
 Citing this work:
 ```
 @article{10.1093/gigascience/giad046,

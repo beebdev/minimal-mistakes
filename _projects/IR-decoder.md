@@ -7,3 +7,6 @@ redirect_from:
 toc: true
 order: 7
 ---
+
+Github Repo Link: [https://github.com/beebdev/COMP3601-20T3-Brown](https://github.com/beebdev/COMP3601-20T3-Brown)
+{: .notice--info}
