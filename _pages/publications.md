@@ -24,7 +24,11 @@ classes: wide
 ## Poster Presentations
 **Efficient real-time selective genome sequencing on resource-constrained devices.**\\
 <ins>Po Jui Shih</ins>, Hassaan Saadat, Sri Parameswaran, and Hasindu Gamaarachchi\\
-*Australian Bioinformatics And Computational Biology Society (ABACBS)*, Dec 2023
+*Australian Bioinformatics And Computational Biology Society Conference (ABACBS)*, Dec 2023
+
+**Efficient real-time selective genome sequencing on resource-constrained devices.**\\
+<ins>Po Jui Shih</ins>, Hassaan Saadat, Sri Parameswaran, and Hasindu Gamaarachchi\\
+*COBINE Symposium 2023*, Dec 2023
 
 **[Hardware accelerated real-time selective genome sequencing](/assets/files/unsw-thesis-haru-poster.pdf).**\\
 <ins>Po Jui Shih</ins>\\

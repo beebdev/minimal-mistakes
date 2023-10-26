@@ -16,7 +16,7 @@ Research and Development Intern<span style="float:right;">*2020 Summer\**</span>
 Research and Development Intern<span style="float:right;">*2019 Summer\**</span>
 
 <!-- ===== UNSW CSE ===== -->
-**UNSW, School of CSE**, Sydney, Australia\\
+**UNSW, School of Computer Science and Engineering**, Sydney, Australia\\
 Casual Academic <span style="float:right;">*Feb 2020 - **Present***</span>
 
 <!-- ===== UNSW Embedded Systems Research Group ===== -->
@@ -26,20 +26,18 @@ Undergraduate Researcher <span style="float:right;">*Nov 2020 - May 2022*</span>
 > \* Summer in the southern hemisphere
 
 # Education
-**University of New South Wales (UNSW Sydney)**\\
+**University of New South Wales (UNSW)**, Sydney, Australia \\
 B.Eng. (Honours) in Computer Engineering <span style="float:right;">*Feb 2018 - Dec 2021*</span>
 - First Class Honours
 - Thesis title: *"Hardware Accelerated Real-Time Selective Genome Sequencing"*
 - Advisor: [Prof. Sri Parameswaran](https://www.sydney.edu.au/engineering/about/our-people/academic-staff/sri-parameswaran.html), (co-advised by: [Dr. Hasindu Gamaarachchi](https://www.unsw.edu.au/staff/hasindu-gamaarachchi) and [Dr. Hassaan Saadat](https://www.linkedin.com/in/hassaan-saadat-7947a3166))
 
 # Honours and Awards
-**First Class Honours**, UNSW B.Eng. <span style="float:right;">*2021*</span>\\
+**First Class Honours**, UNSW Faculty of Engineering <span style="float:right;">*2021*</span>\\
 **Outstanding Undergraduate Thesis**, UNSW School of CSE <span style="float:right;">*2021*</span>\\
-**Faculty of Engineering Dean's Honours List**, UNSW <span style="float:right;">*2018, 2019, 2020*</span>
-
+**Dean's Honours List**, UNSW Faculty of Engineering <span style="float:right;">*2018, 2019, 2020*</span>
 
 # Teaching experience
-
 **[COMP3601](https://www.handbook.unsw.edu.au/undergraduate/courses/2021/COMP3601?year=2022) Design Project A** <span style="float:right;"> UNSW Sydney</span>\\
 Guest Lecturer <span style="float:right;"> *23T3*</span>\\
 Course Coordinator & Guest Lecturer, 46 students <span style="float:right;"> *22T3*</span>\\
