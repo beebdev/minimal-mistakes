@@ -28,7 +28,7 @@ classes: wide
 
 **Efficient real-time selective genome sequencing on resource-constrained devices.**\\
 <ins>Po Jui Shih</ins>, Hassaan Saadat, Sri Parameswaran, and Hasindu Gamaarachchi\\
-*COBINE Symposium 2023*, Dec 2023
+*COMBINE Symposium 2023*, Dec 2023
 
 **[Hardware accelerated real-time selective genome sequencing](/assets/files/unsw-thesis-haru-poster.pdf).**\\
 <ins>Po Jui Shih</ins>\\
