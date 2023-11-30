@@ -1,6 +1,6 @@
 ---
-layout: categories
+layout: tags
 permalink: /tags/
-title: "Categories"
+title: "Tags"
 author_profile: true
 ---

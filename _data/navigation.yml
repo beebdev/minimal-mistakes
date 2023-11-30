@@ -2,8 +2,11 @@
 main:
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Home"
+    url: /
   - title: "CV"
-    url: /assets/files/epjs_cv.pdf
+    url: /cv
+    # url: /assets/files/epjs_cv.pdf
   - title: "Publication"
     url: /publications/
   - title: "Projects"

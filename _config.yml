@@ -287,7 +287,9 @@ collections:
   projects:
     output: true
     permalink: /:collection/:path/
-    
+  publications:
+    output: true
+    permalink: /:collection/:path/
 
 defaults:
   # _posts
@@ -320,4 +322,17 @@ defaults:
       comments: false
       sidebar:
         nav: "docs"
+  # _publications
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      read_time: false
+      author_profile: true
+      share: false
+      comments: false
+      # sidebar:
+      #   nav: "docs"
+
 
