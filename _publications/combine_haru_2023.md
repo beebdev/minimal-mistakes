@@ -1,6 +1,6 @@
 ---
 title: "Efficient real-time selective genome sequencing on resource-constrained devices."
-permalink: "abacbs-haru-2023"
+permalink: "combine-haru-2023"
 # pub_link: ""
 pub_no_link: false
 pub_type: poster
