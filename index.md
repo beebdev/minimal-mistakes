@@ -55,8 +55,8 @@ Academic Tutor, 46 students <span style="float:right;"> *21T2*</span>
 > \* "Academic Tutor" at UNSW is equivalent to "Teaching Assistant"
 
 
-# Advising
-Katelyn Mak (with H. Gamaarachchi), *UNSW Honours Thesis* <span style="float:right;">*2023 - Present*</span>
+<!-- # Advising
+Katelyn Mak (with H. Gamaarachchi), *UNSW Honours Thesis* <span style="float:right;">*2023 - Present*</span> -->
 
 # Professional Services
 **External Reviewer**\\
