@@ -1,6 +1,6 @@
 ---
 title: "Five Stage MIPS Processor"
-permalink: /portfolio/five-stage-mips
+permalink: /projects/five-stage-mips
 excerpt: "Five stage MIPS processor"
 redirect_from:
   - /theme-setup/

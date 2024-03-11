@@ -1,6 +1,6 @@
 ---
 title: "RUScripts-R9"
-permalink: /portfolio/ruscript-r9
+permalink: /projects/ruscript-r9
 excerpt: "Updated RUScripts"
 redirect_from:
   - /theme-setup/

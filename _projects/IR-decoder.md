@@ -1,6 +1,6 @@
 ---
 title: "IR decoder multimedia box"
-permalink: /portfolio/ir-brown-box
+permalink: /projects/ir-brown-box
 excerpt: "Project for COMP3601 20T3"
 redirect_from:
   - /theme-setup/

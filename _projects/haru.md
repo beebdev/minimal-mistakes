@@ -1,6 +1,6 @@
 ---
 title: "HARU"
-permalink: /portfolio/quick-start-guide/
+permalink: /projects/haru/
 excerpt: "Hardware Accelerated Read Until"
 redirect_from:
   - /theme-setup/

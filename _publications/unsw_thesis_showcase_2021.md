@@ -1,6 +1,6 @@
 ---
-title: "Hardware accelerated real-time selective genome seqeuncing"
-permalink: "unsw-thesis-showcase-2021"
+title: "Hardware accelerated real-time selective genome seqeuncing."
+permalink: "pubs/unsw-thesis-showcase-2021"
 # pub_link: ""
 pub_no_link: false
 pub_type: poster

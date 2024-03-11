@@ -1,6 +1,6 @@
 ---
 title: "RSSalut"
-permalink: /portfolio/rssalut
+permalink: /projects/rssalut
 excerpt: "Hand gesture recognition through WiFi RSS"
 redirect_from:
   - /theme-setup/

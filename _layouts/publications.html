@@ -63,6 +63,36 @@ layout: archive
   {% endfor %}
 </div>
 
+
+<!-- ORAL PRESO -->
+{% assign pubs = site.publications | where_exp: "item", "item.hidden != true" | where: 'pub_type', 'oral' %}
+<h2>Oral Presentations</h2>
+<div class="entries-{{ entries_layout }}">
+  {% for post in pubs %}
+    <h4>
+      {% if post.pub_link %}
+      <a href="{{ post.pub_link }}" target="_blank" rel="permalink">{{ post.title }}</a>
+      {% else %}
+      <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
+      {% endif %}
+    </h4>
+    <div>
+    {% for author in post.pub_authors %}
+      {% if author == "Po Jui Shih" or author == "Elton Shih" %}
+        <u>{{ author }}</u>
+      {% else %}
+        {{ author }}
+      {% endif %}
+      <!-- check if need comma -->
+      {% if forloop.last == false %}
+        ,
+      {% endif %}
+    {% endfor %}
+    </div>
+    <div><i>{{ post.pub_location }}</i>, {{ post.pub_date | date: "%b %Y" }}</div>
+  {% endfor %}
+</div>
+
 <!-- POSTERS -->
 {% assign pubs = site.publications | where_exp: "item", "item.hidden != true" | where: 'pub_type', 'poster' %}
 <h2>Poster Presentations</h2>

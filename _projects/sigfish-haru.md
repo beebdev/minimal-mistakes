@@ -1,6 +1,6 @@
 ---
 title: "sigfish-haru"
-permalink: /portfolio/sigfish-haru
+permalink: /projects/sigfish-haru
 excerpt: "HARU accelerated sigfish"
 redirect_from:
   - /theme-setup/

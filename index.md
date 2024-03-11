@@ -52,7 +52,7 @@ Academic Tutor, 43 students <span style="float:right;"> *20T1*</span>
 **[COMP1521](https://www.handbook.unsw.edu.au/undergraduate/courses/2021/COMP1521/?year=2021) Computer Systems Fundamentals** <span style="float:right;"> UNSW Sydney</span>\\
 Academic Tutor, 46 students <span style="float:right;"> *21T2*</span>
 
-> \* "Academic Tutor" at UNSW is equivalent to "Teaching Assistant"
+> `"Academic Tutor" == "Teaching Assistant"`
 
 
 <!-- # Advising
