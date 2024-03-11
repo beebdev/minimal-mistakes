@@ -25,5 +25,5 @@ Hardware accelerated sDTW based nanopore selective sequencing on off-the-shelf $
 - A.K.A: The [HARU](projects/haru) project
 - Journal name: GigaScience
 - Publisher: Oxford University Press
-- Links: \[[web](https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giad046/7217084?login=false)\] \[[PDF](assets/files/giad046.pdf)\]
+- Links: \[[web](https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giad046/7217084?login=false)\] \[[PDF](/assets/files/giad046.pdf)\]
 - Code: \[[HARU (Github)](https://github.com/beebdev/HARU)\] \[[sigfish-haru (Github)](https://github.com/beebdev/sigfish-haru)\]
