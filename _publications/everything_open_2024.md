@@ -15,8 +15,8 @@ excerpt: ""
 # order: 3
 ---
 
-## Anything Open 2024 - Talk #68
-Everything Open is Linux Australia's conference on open technologies. As the name suggests, anything open is covered, including Linux, open source software/hardware, open data, etc.. see you there! :)
+## Everything Open 2024 - Talk #68
+Everything Open is Linux Australia's conference on open technologies. As the name suggests, anything open can be covered in this conference, including Linux, open source software/hardware, open data, etc.. My talk will be the last session on the last day! See you there! :)
 
 - Location: Gladstone, QLD
 - Date: April 18, 2024
