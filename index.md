@@ -66,6 +66,3 @@ ASP-DAC<span style="float:right;">*2024*</span>
 
 **[UNSW CSESoc](https://www.csesoc.unsw.edu.au/) Peer Mentor** <span style="float:right;">*2021*</span>\\
 **[UNSW CSESoc](https://www.csesoc.unsw.edu.au/) Media Subcommittee** <span style="float:right;">*2019*</span>
-
-
-<!-- {% drawio path="assets/drawio/test.drawio" page_number=0 height=200 %} -->
