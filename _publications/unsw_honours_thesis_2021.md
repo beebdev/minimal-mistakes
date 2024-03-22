@@ -1,5 +1,5 @@
 ---
-title: "Hardware accelerated real-time selective genome seqeuncing."
+title: "Hardware accelerated real-time selective genome seqeuncing"
 permalink: "pubs/unsw-thesis-2021"
 # pub_link: ""
 pub_no_link: true

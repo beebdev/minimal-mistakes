@@ -1,5 +1,5 @@
 ---
-title: "Efficient real-time selective genome sequencing on resource-constrained devices."
+title: "Efficient real-time selective genome sequencing on resource-constrained devices"
 permalink: "pubs/giad046"
 # pub_link: "https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giad046/7217084"
 pub_no_link: false
@@ -17,6 +17,8 @@ excerpt: "HARU - Hardware Accelerated Read Until"
 # toc: true
 # order: 3
 ---
+
+## GigaScience - giga046
 
 <!-- ## "Efficient real-time selective genome sequencing on resource-constrained devices." -->
 

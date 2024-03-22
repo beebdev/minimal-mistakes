@@ -1,5 +1,5 @@
 ---
-title: "Transitioning from FreeRTOS to Zephyr RTOS: A Product Refresh Journey."
+title: "Transitioning from FreeRTOS to Zephyr RTOS: A Product Refresh Journey"
 permalink: "pubs/everything-open-2024"
 # pub_link: ""
 pub_no_link: false
@@ -18,7 +18,7 @@ excerpt: ""
 ## Everything Open 2024 - Talk #68
 Everything Open is Linux Australia's conference on open technologies. As the name suggests, anything open can be covered in this conference, including Linux, open source software/hardware, open data, etc.. My talk will be the last session on the last day! See you there! :)
 
-- Location: Gladstone, QLD
-- Date: April 18, 2024
+- Location: *Gladstone, QLD*
+- Date: *Apr 16 - 18 2023*
 - Conference link: \[[Everything Open 2024](https://2024.everythingopen.au/)\]
 - Talk: *slides and recording to be added after the talk*
