@@ -12,6 +12,8 @@ order: 1
 Github Repo Link: [https://github.com/beebdev/HARU](https://github.com/beebdev/HARU)
 {: .notice--info}
 
+# Overview
+
 HARU (Hardware Accelerated Read Until) is a heterogenous compute solution for Oxford Nanopore Technologies' adaptive sampling (also known as selective sequencing and [Read Until](https://nanoporetech.com/resource-centre/read-until-adaptive-sampling)). Read Until allows genomic reads to be analyzed in real-time and abandoned halfway, if not belonging to a genomic region of 'interest'. HARU takes advantage of heterogenous edge compute platforms and provide hardware acceleration using reconfigurable hardware on an Multiprocessor system on a chip  (MPSoC). 
 
 Citing this work:
@@ -42,7 +44,6 @@ Our current proof-of-concept implementation of HARU utilises a custom subsequenc
 # Quickstart
 To quickly test out HARU, you can download the pre-built binary package built for Kria from the [latest release](https://github.com/beebdev/HARU/releases).
 
-## Steps
 1. Download the prebuilt PetaLinux image for the Kria AI Starter Kit available from the [releases](https://github.com/beebdev/HARU/releases) (named *petalinux-sdimage.wic.gz*).
 2. Using your preferred imaging tool (e.g. [Balena Etcher](https://www.balena.io/etcher/)), flash the image onto the micro SD card.
 3. Once the Micro SD card is prepared, insert it into the Micro SD card slot on the Kria board. 
@@ -75,16 +76,17 @@ To quickly test out HARU, you can download the pre-built binary package built fo
     ./sigfish-cpu dtw -g test_data/nCoV-2019.reference.fasta -s test_data/reads_0_0.blow5 > output.paf
     ```
 
-## Building
-> Warnings:
-> - The building of the core acccelerator is not intuitive and require proprietary software from AMD Xilinx.
-> - The build steps tested and described below uses the 2021.1 version of Xilinx tools (Vivado and PetaLinux image). For developers with versions lower than 2020.2 you will need to update your tools to a platform supporting Kria.
+# Building
+> WARNING!
+> - The building of the core acccelerator is not intuitive and require proprietary software from AMD Xilinx
+> - The build steps tested and described below uses the 2021.1 version of Xilinx tools (Vivado and PetaLinux image). For developers with versions lower than 2020.2 you will need to update your tools to a platform supporting Kria KV260
+{: .notice--warning}
 
 To build HARU for Xilinx's Kria AI Starter Kit, you will need to build two components:
 - Core Accelerator (HDL, build with Vivado)
 - Sigfish-haru + driver (C, build with cross-compilation toolchain)
 
-### Prerequisites
+## Prerequisites
 - Vitis 2021.1 - we install Vitis so that the Xilinx Command Line Tool (XSTC) is included in the installation
     - Download [Vivado (hw developer) 2021.1 installer](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2021-1.html). We suggest downloading the Self Extracting Web Installer.
     - Select Vitis during the installation wizard.
@@ -101,7 +103,7 @@ To build HARU for Xilinx's Kria AI Starter Kit, you will need to build two compo
     make
     export PATH=$PATH:/<path-to-dtc>/ # optionally, add this to your .bashrc 
     ```
-### Core Accelerator
+## Core Accelerator
 1. Clone the repository if you have not done so.
     ```sh
     git clone https://github.com/beebdev/HARU
@@ -158,7 +160,7 @@ To build HARU for Xilinx's Kria AI Starter Kit, you will need to build two compo
     xmutil loadapp haru-dtw-firmware # Load haru-dtw-firmware
     xmutil listapps         # List the accelerators and check status for haru
 
-### Sigfish-haru
+## Sigfish-haru
 
 We recommend cross-compilation of sigfish-haru on the host machine. For cross-compilation, you will need to setup the cross-compilation toolchain for the Kria board, which is included in the [release](https://github.com/beebdev/HARU/releases) as `petalinux-sdk.sh`.
 ```sh
@@ -193,6 +195,6 @@ Steps to build sigfish:
 4. Run `sigfish` with accelerator loaded (see above for steps).
 
 
-## For developers
+# For developers
 
 Developers can use our sDTW accelerator core in their own applications. To do so, refer to the driver API as explained [here](https://github.com/beebdev/HARU/tree/main/driver) or browse through the code for [sigfish-haru](https://github.com/beebdev/sigfish-haru). 

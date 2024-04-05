@@ -12,10 +12,6 @@ pub_authors:
   - Hasindu Gamaarachchi
 pub_date: 2023-12-05
 excerpt: ""
-# redirect_from:
-#   - /theme-setup/
-# toc: true
-# order: 3
 ---
 
 ## ABACBS & COMBINE 2023 - Poster Preso
