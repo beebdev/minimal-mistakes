@@ -1,8 +1,5 @@
 ---
 title: "Efficient real-time selective genome sequencing on resource-constrained devices"
-permalink: "pubs/abacbs-haru-2023"
-# pub_link: ""
-pub_no_link: false
 pub_type: poster
 pub_location: "ABACBS & COMBINE Symposium"
 pub_authors:
@@ -12,6 +9,10 @@ pub_authors:
   - Hasindu Gamaarachchi
 pub_date: 2023-12-05
 excerpt: ""
+publisher: "https://2023.abacbs.org/"
+pdf: "/assets/files/ABACBS_HARU.pdf"
+# code1: ""
+# code2: ""
 ---
 
 ## ABACBS & COMBINE 2023 - Poster Preso

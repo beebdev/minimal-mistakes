@@ -1,18 +1,15 @@
 ---
 title: "Hardware accelerated real-time selective genome seqeuncing"
-permalink: "pubs/unsw-thesis-showcase-2021"
-# pub_link: ""
-pub_no_link: false
 pub_type: poster
 pub_location: "UNSW School of CSE Outstanding Honours Thesis Showcase"
 pub_authors:
   - Po Jui Shih
 pub_date: 2021-12-02
 excerpt: ""
-# redirect_from:
-#   - /theme-setup/
-# toc: true
-# order: 3
+# publisher: ""
+pdf: "/assets/files/unsw-thesis-haru-poster.pdf"
+# code1: ""
+# code2: ""
 ---
 
 ## UNSW CSE Outstanding Honours Thesis Showcase 2021
