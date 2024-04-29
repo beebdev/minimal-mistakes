@@ -51,6 +51,47 @@ author_profile: true
   font-size: smaller;
 }
 
+.two-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.column {
+    flex: 3;
+    padding-right: 20px; /* Add space between the columns */
+    margin-top: 0em; /* Adjusts space between list items, if necessary */
+
+}
+.column ul, .column ol .column li {
+    margin: -10px 0px 5px 0px;
+    padding-left: 20px; /* Adjusts space on the left side of the list */
+}
+
+.column2 {
+  flex: 1;
+}
+
+.column:last-child {
+  padding-right: 0; /* Ensure that the last column doesn't have padding on the right */
+}
+
+@media (max-width: 768px) {
+  .two-column {
+    flex-direction: column;
+  }
+  .column {
+    padding-right: 0; /* Remove padding on smaller screens */
+  }
+  .column2 {
+    display: none;
+  }
+
+  .b-font {
+    text-align: left;
+  }
+}
+
 </style>
 
 > <h1 class="a-font">Hello world!</h1>
@@ -89,11 +130,16 @@ Undergraduate Researcher <span style="float:right;">_Nov 2020 - May 2022_</span>
 
 **University of New South Wales (UNSW)**, Sydney, Australia \\
 B.Eng. (Honours) in Computer Engineering <span style="float:right;">_Feb 2018 - Dec 2021_</span>
-- First Class Honours
-<img src="assets/images/unsw-logo.png" alt="UNSW logo" class="align-right no-copy" width="100" height="auto" />
-- Thesis title: _"Hardware Accelerated Real-Time Selective Genome Sequencing"_
-- Advisor: [Prof. Sri Parameswaran](https://www.sydney.edu.au/engineering/about/our-people/academic-staff/sri-parameswaran.html), (co-advised by: [Dr. Hasindu Gamaarachchi](https://www.unsw.edu.au/staff/hasindu-gamaarachchi) and [Dr. Hassaan Saadat](https://www.linkedin.com/in/hassaan-saadat-7947a3166))
-
+<div class="two-column">
+  <div class="column" markdown="1">
+  - First Class Honours
+  - Thesis title: _"Hardware Accelerated Real-Time Selective Genome Sequencing"_
+  - Advisor: [Prof. Sri Parameswaran](https://www.sydney.edu.au/engineering/about/our-people/academic-staff/sri-parameswaran.html), (co-advised by: [Dr. Hasindu Gamaarachchi](https://www.unsw.edu.au/staff/hasindu-gamaarachchi) and [Dr. Hassaan Saadat](https://www.linkedin.com/in/hassaan-saadat-7947a3166))
+  </div>
+  <div class="column2">
+      <img src="assets/images/unsw-logo.png" alt="UNSW logo" class="align-right no-copy" width="100" height="auto" />
+  </div>
+</div>
 
 <!-- # Honours and Awards -->
 ---
