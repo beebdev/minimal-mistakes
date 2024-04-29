@@ -1,0 +1,41 @@
+<!-- _layouts/publication.html -->
+<div class="entry">
+    <h4 class="b-font">
+        {{ include.publication.title }}
+    </h4>
+    <div>
+        {% for author in include.publication.pub_authors %}
+            {% if author == "Po Jui Shih" %}<u>{{ author }}</u>
+            {% else %}{{ author }}
+            {% endif %}
+            {% if forloop.last == false %},{% endif %}
+        {% endfor %}
+    </div>
+    <div class="tooltip">
+        <i>{{ include.publication.pub_location }}</i>
+        {% if include.publication.pub_location_description %}
+        <span class="tooltiptext">{{ include.publication.pub_location_description }}</span>
+        {% endif %}
+    </div>, {{ include.publication.pub_date | date: "%b %Y" }}
+    
+    <div>
+        {% if include.publication.lk_publisher %}
+            <a href="{{ include.publication.lk_publisher }}" class="pub-button" target="_blank">link</a>
+        {% endif %}
+        {% if include.publication.lk_pdf %}
+            <a href="{{ include.publication.lk_pdf }}" class="pub-button" target="_blank">pdf</a>
+        {% endif %}
+        {% if include.publication.lk_code1 %}
+            <a href="{{ include.publication.lk_code1 }}" class="pub-button" target="_blank">code 1</a>
+        {% endif %}
+        {% if include.publication.lk_code2 %}
+            <a href="{{ include.publication.lk_code2 }}" class="pub-button" target="_blank">code 2</a>
+        {% endif %}
+        {% if include.publication.lk_blog %}
+            <a href="{{ include.publication.lk_blog }}" class="pub-button" target="_blank">blog</a>
+        {% endif %}
+        {% if include.publication.lk_association %}
+            <img src="{{ include.publication.lk_association }}" alt="Publication Logo" class="logo-bottom-right" />
+        {% endif %}
+    </div>
+</div>

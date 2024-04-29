@@ -10,12 +10,12 @@ pub_authors:
   - Hasindu Gamaarachchi
 pub_date: 2023-07-04
 excerpt: "HARU - Hardware Accelerated Read Until"
-publisher: "https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giad046/7217084"
-pdf: "/assets/files/giad046.pdf"
-code1: "https://github.com/beebdev/HARU"
-code2: "https://github.com/beebdev/sigfish-haru"
-blog: "http://gigasciencejournal.com/blog/selective-sequencing-on-a-shoestring-the-300-haru-system/"
-
+lk_publisher: "https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giad046/7217084"
+lk_pdf: "/assets/files/giad046.pdf"
+lk_code1: "https://github.com/beebdev/HARU"
+lk_code2: "https://github.com/beebdev/sigfish-haru"
+lk_blog: "http://gigasciencejournal.com/blog/selective-sequencing-on-a-shoestring-the-300-haru-system/"
+lk_association: "/assets/images/logo/unsw.png"
 ---
 
 ## GigaScience - giga046

@@ -9,10 +9,11 @@ pub_authors:
   - Hasindu Gamaarachchi
 pub_date: 2023-12-05
 excerpt: ""
-publisher: "https://2023.abacbs.org/"
-pdf: "/assets/files/ABACBS_HARU.pdf"
-# code1: ""
-# code2: ""
+lk_publisher: "https://2023.abacbs.org/"
+lk_pdf: "/assets/files/ABACBS_HARU.pdf"
+# lk_code1: ""
+# lk_code2: ""
+lk_association: "/assets/images/logo/unsw.png"
 ---
 
 ## ABACBS & COMBINE 2023 - Poster Preso

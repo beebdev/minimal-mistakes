@@ -6,10 +6,11 @@ pub_authors:
   - Po Jui Shih
 pub_date: 2021-12-02
 excerpt: ""
-# publisher: ""
-pdf: "/assets/files/unsw-thesis-haru-poster.pdf"
-# code1: ""
-# code2: ""
+#lk_publisher: ""
+lk_pdf: "/assets/files/unsw-thesis-haru-poster.pdf"
+# lk_code1: ""
+# lk_code2: ""
+lk_association: "/assets/images/logo/unsw.png"
 ---
 
 ## UNSW CSE Outstanding Honours Thesis Showcase 2021

@@ -34,7 +34,18 @@
       {% if author.links %}
         {% for link in author.links %}
           {% if link.label and link.url %}
-            <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer me"{% if link.url contains 'http' %} itemprop="sameAs"{% endif %}><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i><span class="label">{{ link.label }}</span></a></li>
+            <li>
+              <a href="{{ link.url }}" rel="nofollow noopener noreferrer me"{% if link.url contains 'http' %} itemprop="sameAs"{% endif %}>
+                <i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i>{% if link.label == "Google Scholar" %}<div class="tooltip"><span class="label">{{ link.label }}</span>
+                    <span class="tooltiptext">
+                      Citations: {{ site.data.scholar.citations }}<br>
+                      h-index: {{ site.data.scholar.h_index }}<br>
+                      i10-index: {{ site.data.scholar.i10_index }}
+                    </span>
+                  </div>
+                {% else %}<span class="label">{{ link.label }}</span>{% endif %}
+              </a>
+            </li>
           {% endif %}
         {% endfor %}
       {% endif %}

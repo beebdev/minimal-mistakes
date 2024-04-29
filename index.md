@@ -118,7 +118,7 @@ Research and Development Intern<span style="float:right;">_2019 Summer_</span>
 
 <!-- ===== UNSW CSE ===== -->
 
-**UNSW, School of Computer Science and Engineering**, Sydney, Australia\\
+**UNSW, School of CSE**, Sydney, Australia\\
 Casual Academic <span style="float:right;">_Feb 2020 - **Present**_</span>
 
 <!-- ===== UNSW Embedded Systems Research Group ===== -->
@@ -140,7 +140,7 @@ B.Eng. (Honours) in Computer Engineering <span style="float:right;">_Feb 2018 - 
   - Advisor: [Prof. Sri Parameswaran](https://www.sydney.edu.au/engineering/about/our-people/academic-staff/sri-parameswaran.html), (co-advised by: [Dr. Hasindu Gamaarachchi](https://www.unsw.edu.au/staff/hasindu-gamaarachchi) and [Dr. Hassaan Saadat](https://www.linkedin.com/in/hassaan-saadat-7947a3166))
   </div>
   <div class="column2">
-      <img src="assets/images/unsw-logo.png" alt="UNSW logo" class="align-right no-copy" width="100" height="auto" />
+      <img src="assets/images/logo/unsw.png" alt="UNSW logo" class="align-right no-copy" width="100" height="auto" />
   </div>
 </div>
 

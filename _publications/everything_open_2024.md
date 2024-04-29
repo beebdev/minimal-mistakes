@@ -6,10 +6,11 @@ pub_authors:
   - Elton Shih
 pub_date: 2024-04-18
 excerpt: ""
-publisher: "https://2024.everythingopen.au/"
-pdf: "/assets/files/Everything-Open-Zephyr.pdf"
-# code1: ""
-# code2: ""
+lk_publisher: "https://2024.everythingopen.au/"
+lk_pdf: "/assets/files/Everything-Open-Zephyr.pdf"
+# lk_code1: ""
+# lk_code2: ""
+lk_association: "/assets/images/logo/audinate.png"
 ---
 
 ## Everything Open 2024 - Talk #68

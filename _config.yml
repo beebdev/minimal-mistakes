@@ -115,7 +115,7 @@ author:
       # url: "mailto:eshih.pj@gmail.com"
     - label: "Google Scholar"
       icon: "fas fa-fw fa-link"
-      url: "https://scholar.google.com.au/citations?user=CJNjaxkAAAAJ&hl=en&authuser=3"
+      url: "https://scholar.google.com.au/citations?user=CJNjaxkAAAAJ"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/eltonshih/"

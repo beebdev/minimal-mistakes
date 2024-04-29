@@ -6,13 +6,7 @@ layout: archive
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-    .a-font {
-        /* font-family: "Noto Sans", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 700;
-        font-style: normal;
-        font-variation-settings:
-            "wdth" 100; */
+    .pub-type {
         font-family: "Roboto Mono", monospace;
         font-optical-sizing: auto;
         font-weight: 700;
@@ -74,240 +68,60 @@ layout: archive
         /* Slightly scale down when clicked */
     }
 
-    .tooltip {
+    .entry {
         position: relative;
-        display: inline-block;
+        /* Other styles remain unchanged */
     }
 
-    .tooltip .tooltiptext {
-        visibility: hidden;
-        width: 120px;
-        background-color: rgba(85, 85, 85, 0.8);
-        /* Dark grey background with 80% opacity */
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 5px;
+    .logo-bottom-right {
         position: absolute;
-        z-index: 1;
-        bottom: 125%;
-        left: 50%;
-        margin-left: -60px;
-        opacity: 0;
-        transition: opacity 0.3s;
-    }
-
-    .tooltip:hover .tooltiptext {
-        visibility: visible;
-        opacity: 1;
+        bottom: 10px; /* Distance from bottom */
+        right: 10px; /* Distance from right */
+        width: 50px; /* Width of the logo */
+        height: auto; /* Maintain aspect ratio */
+        opacity: 0.5; /* Make the logo slightly transparent */
+        -webkit-user-drag: none; /* Prevents dragging on Webkit browsers */
+        user-drag: none; /* Prevents dragging on non-Webkit browsers */
+        -webkit-user-select: none; /* Prevents text selection on Webkit browsers */
+        -moz-user-select: none; /* Prevents text selection on Firefox */
+        -ms-user-select: none; /* Prevents text selection on Internet Explorer/Edge */
+        user-select: none; /* Prevents text selection on non-Webkit browsers */
+        pointer-events: none; /* Prevents click events such as right-click save image */
     }
 </style>
 
 <!-- JOURNALS -->
-{% assign pubs = site.publications | where_exp: "item", "item.hidden != true" | where: 'pub_type', 'journal' %}
-<h2 class="a-font">Peer Reviewed Journal Articles</h2>
+<h2 class="pub-type">Peer Reviewed Journal Articles</h2>
 <div class="entries-{{ entries_layout }}">
-    {% for post in pubs %}
-    <div class="entry">
-        <h4 class="b-font">
-            {{ post.title }}
-        </h4>
-        <!-- {{ post.pub_authors }} -->
-        <div>
-            {% for author in post.pub_authors %}
-                {% if author == "Po Jui Shih" %} <u>{{ author }}</u>
-                {% else %} {{ author }}
-                {% endif %}
-                <!-- check if need comma -->
-                {% if forloop.last == false %},{% endif %}
-            {% endfor %}
-        </div>
-        <div class="tooltip">
-            <i>{{ post.pub_location }}</i>
-            {% if post.pub_location_description %}
-            <span class="tooltiptext">{{ post.pub_location_description }}</span>, {{ post.pub_date | date: "%b %Y" }}
-            {% endif %}
-        </div>
-
-        <div>
-            {% if post.publisher %} <!-- publisher -->
-            <a href="{{ post.publisher }}" class="pub-button" target="_blank">link</a>
-            {% endif %}
-            {% if post.pdf %} <!-- PDF -->
-            <a href="{{ post.pdf }}" class="pub-button" target="_blank">pdf</a>
-            {% endif %}
-            {% if post.code1 %} <!-- Code1 -->
-            <a href="{{ post.code1 }}" class="pub-button" target="_blank">code 1</a>
-            {% endif %}
-            {% if post.code2 %} <!-- Code2 -->
-            <a href="{{ post.code2 }}" class="pub-button" target="_blank">code 2</a>
-            {% endif %}
-            {% if post.blog %} <!-- Blog -->
-            <a href="{{ post.blog }}" class="pub-button" target="_blank">blog</a>
-            {% endif %}
-        </div>
-    </div>
+    {% assign pubs = site.publications | where_exp: "item", "item.hidden != true" | where: 'pub_type', 'journal' %}
+    {% for pub in pubs %}
+        {% include publication.html publication=pub %}
     {% endfor %}
 </div>
 
 <!-- DISSERTATIONS -->
-{% assign pubs = site.publications | where_exp: "item", "item.hidden != true" | where: 'pub_type', 'dissertation' %}
-<h2 class="a-font">Dissertations</h2>
+<h2 class="pub-type">Dissertations</h2>
 <div class="entries-{{ entries_layout }}">
-    {% for post in pubs %}
-    <div class="entry">
-        <h4 class="b-font">
-            <!-- {% if post.pub_no_link %}
-            {{ post.title }}
-            {% elsif post.pub_link %}
-            <a href="{{ post.pub_link }}" target="_blank" rel="permalink">{{ post.title }}</a>
-            {% else %}
-            <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
-            {% endif %} -->
-            {{ post.title }}
-        </h4>
-        <div>
-            {% for author in post.pub_authors %}
-            {% if author == "Po Jui Shih" %}
-            <u>{{ author }}</u>
-            {% else %}
-            {{ author }}
-            {% endif %}
-            <!-- check if need comma -->
-            {% if forloop.last == false %}
-            ,
-            {% endif %}
-            {% endfor %}
-        </div>
-
-        <div class="tooltip">
-            <i>{{ post.pub_location }}</i>
-            {% if post.pub_location_description %}
-            <span class="tooltiptext">{{ post.pub_location_description }}</span>, {{ post.pub_date | date: "%b %Y" }}
-            {% endif %}
-        </div>
-
-        <div>
-        {% if post.publisher %} <!-- publisher -->
-        <a href="{{ post.publisher }}" class="pub-button" target="_blank">link</a>
-        {% endif %}
-        {% if post.pdf %} <!-- PDF -->
-        <a href="{{ post.pdf }}" class="pub-button" target="_blank">pdf</a>
-        {% endif %}
-        {% if post.code1 %} <!-- Code1 -->
-        <a href="{{ post.code1 }}" class="pub-button" target="_blank">code 1</a>
-        {% endif %}
-        {% if post.code2 %} <!-- Code2 -->
-        <a href="{{ post.code2 }}" class="pub-button" target="_blank">code 2</a>
-        {% endif %}
-        </div>
-    </div>
+    {% assign pubs = site.publications | where_exp: "item", "item.hidden != true" | where: 'pub_type', 'dissertation' %}
+    {% for pub in pubs %}
+        {% include publication.html publication=pub %}
     {% endfor %}
 </div>
 
-
-<!-- ORAL PRESO -->
-{% assign pubs = site.publications | where_exp: "item", "item.hidden != true" | where: 'pub_type', 'oral' %}
-<h2 class="a-font">Talks</h2>
+<!-- TALKS -->
+<h2 class="pub-type">Talks</h2>
 <div class="entries-{{ entries_layout }}">
-    {% for post in pubs %}
-    <div class="entry">
-        <h4 class="b-font">
-            <!-- {% if post.pub_link %}
-            <a href="{{ post.pub_link }}" target="_blank" rel="permalink">{{ post.title }}</a>
-            {% else %}
-            <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
-            {% endif %} -->
-            {{ post.title }}
-        </h4>
-        <div>
-            {% for author in post.pub_authors %}
-            {% if author == "Po Jui Shih" or author == "Elton Shih" %}
-            <u>{{ author }}</u>
-            {% else %}
-            {{ author }}
-            {% endif %}
-            <!-- check if need comma -->
-            {% if forloop.last == false %}
-            ,
-            {% endif %}
-            {% endfor %}
-        </div>
-
-        <div class="tooltip">
-            <i>{{ post.pub_location }}</i>
-            {% if post.pub_location_description %}
-            <span class="tooltiptext">{{ post.pub_location_description }}</span>, {{ post.pub_date | date: "%b %Y" }}
-            {% endif %}
-        </div>
-
-        <div>
-        {% if post.publisher %} <!-- publisher -->
-        <a href="{{ post.publisher }}" class="pub-button" target="_blank">link</a>
-        {% endif %}
-        {% if post.pdf %} <!-- PDF -->
-        <a href="{{ post.pdf }}" class="pub-button" target="_blank">pdf</a>
-        {% endif %}
-        {% if post.code1 %} <!-- Code1 -->
-        <a href="{{ post.code1 }}" class="pub-button" target="_blank">code 1</a>
-        {% endif %}
-        {% if post.code2 %} <!-- Code2 -->
-        <a href="{{ post.code2 }}" class="pub-button" target="_blank">code 2</a>
-        {% endif %}
-        </div>
-    </div>
+    {% assign pubs = site.publications | where_exp: "item", "item.hidden != true" | where: 'pub_type', 'oral' %}
+    {% for pub in pubs %}
+        {% include publication.html publication=pub %}
     {% endfor %}
 </div>
 
 <!-- POSTERS -->
-{% assign pubs = site.publications | where_exp: "item", "item.hidden != true" | where: 'pub_type', 'poster' %}
-<h2 class="a-font">Poster Presentations</h2>
+<h2 class="pub-type">Poster Presentations</h2>
 <div class="entries-{{ entries_layout }}">
-    {% for post in pubs %}
-    <div class="entry">
-        <h4 class="b-font">
-            <!-- {% if post.pub_link %}
-            <a href="{{ post.pub_link }}" target="_blank" rel="permalink">{{ post.title }}</a>
-            {% else %}
-            <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
-            {% endif %} -->
-            {{ post.title }}
-        </h4>
-        <div>
-            {% for author in post.pub_authors %}
-            {% if author == "Po Jui Shih" %}
-            <u>{{ author }}</u>
-            {% else %}
-            {{ author }}
-            {% endif %}
-            <!-- check if need comma -->
-            {% if forloop.last == false %}
-            ,
-            {% endif %}
-            {% endfor %}
-        </div>
-
-        <div class="tooltip">
-            <i>{{ post.pub_location }}</i>
-            {% if post.pub_location_description %}
-            <span class="tooltiptext">{{ post.pub_location_description }}</span>, {{ post.pub_date | date: "%b %Y" }}
-            {% endif %}
-        </div>
-        
-        <div>
-        {% if post.publisher %} <!-- publisher -->
-        <a href="{{ post.publisher }}" class="pub-button" target="_blank">link</a>
-        {% endif %}
-        {% if post.pdf %} <!-- PDF -->
-        <a href="{{ post.pdf }}" class="pub-button" target="_blank">pdf</a>
-        {% endif %}
-        {% if post.code1 %} <!-- Code1 -->
-        <a href="{{ post.code1 }}" class="pub-button" target="_blank">code 1</a>
-        {% endif %}
-        {% if post.code2 %} <!-- Code2 -->
-        <a href="{{ post.code2 }}" class="pub-button" target="_blank">code 2</a>
-        {% endif %}
-        </div>
-    </div>
+    {% assign pubs = site.publications | where_exp: "item", "item.hidden != true" | where: 'pub_type', 'poster' %}
+    {% for pub in pubs %}
+        {% include publication.html publication=pub %}
     {% endfor %}
 </div>
