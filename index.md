@@ -21,15 +21,16 @@ author_profile: true
   user-select: none; /* Prevents text selection on non-Webkit browsers */
   pointer-events: none; /* Prevents click events such as right-click save image */
 }
-/* .b-font {
-  font-family: "Noto Serif", serif;
+
+.b-font {
+  /* font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-variation-settings:
-    "wdth" 100;
+    "wdth" 100; */
   text-align: justify;
-} */
+}
 
 /* footnote */
 .footnote-ref {

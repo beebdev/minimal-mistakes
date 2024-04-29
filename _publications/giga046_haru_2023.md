@@ -2,6 +2,7 @@
 title: "Efficient real-time selective genome sequencing on resource-constrained devices"
 pub_type: journal
 pub_location: "GigaScience (giga046)"
+# pub_location_description: "some description"
 pub_authors:
   - Po Jui Shih
   - Hassaan Saadat
