@@ -24,7 +24,6 @@ excerpt: "HARU - Hardware Accelerated Read Until"
 
 Hardware accelerated sDTW based nanopore selective sequencing on off-the-shelf $300 MPSoCs.
 
-- A.K.A: The [HARU](projects/haru) project
 - Journal name: GigaScience
 - Publisher: Oxford University Press
 - Links: \[[web](https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giad046/7217084?login=false)\] \[[PDF](/assets/files/giad046.pdf)\]

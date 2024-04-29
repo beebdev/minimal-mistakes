@@ -2,9 +2,12 @@
 layout: home
 author_profile: true
 ---
-> I'm a research engineer at [Audinate](https://www.audinate.com/) and a casual academic at [UNSW CSE](https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering). I previously worked with [Prof. Sri Parameswaran](https://www.sydney.edu.au/engineering/about/our-people/academic-staff/sri-parameswaran.html), [Dr. Hasindu Gamaarachchi](https://www.unsw.edu.au/staff/hasindu-gamaarachchi) and [Dr. Hassaan Saadat](https://www.linkedin.com/in/hassaan-saadat-7947a3166/) in the [Embedded Systems Research Group](https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering/our-research/research-groups/embedded-systems) at UNSW Sydney.
+
+> # `Hello World!`
+> I'm a research engineer at **[Audinate](https://www.audinate.com/)** and a casual academic at **[UNSW CSE](https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering)**. I previously worked with **[Prof. Sri Parameswaran](https://www.sydney.edu.au/engineering/about/our-people/academic-staff/sri-parameswaran.html)**, **[Dr. Hasindu Gamaarachchi](https://www.unsw.edu.au/staff/hasindu-gamaarachchi)** and **[Dr. Hassaan Saadat](https://www.linkedin.com/in/hassaan-saadat-7947a3166/)** in the **[Embedded Systems Research Group](https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering/our-research/research-groups/embedded-systems)** at UNSW Sydney.
 >
 > With the ongoing demand of processing throughput from big-data applications like machine learning and computational bioinformatics, designing domain-specific computing systems are important in order to keep up with the trend of data size. I am interested in the cross intersection of computer architecture and computer systems with the goal of improving the processing performance of systems. I like to get hands-on, and my work spans across hardware acceleration, embedded systems, operating systems, computer networks applied on cross disciplines such as bioinformatics and audio over IP.
+{: .notice} 
 
 # Experience
 <!-- ===== Audinate ===== -->
@@ -52,7 +55,7 @@ Academic Tutor, 43 students <span style="float:right;"> *20T1*</span>
 **[COMP1521](https://www.handbook.unsw.edu.au/undergraduate/courses/2021/COMP1521/?year=2021) Computer Systems Fundamentals** <span style="float:right;"> UNSW Sydney</span>\\
 Academic Tutor, 46 students <span style="float:right;"> *21T2*</span>
 
-> `"Academic Tutor" == "Teaching Assistant"`
+> "Academic Tutor" == "Teaching Assistant"
 
 
 <!-- # Advising
@@ -66,3 +69,5 @@ ASP-DAC<span style="float:right;">*2024*</span>
 
 **[UNSW CSESoc](https://www.csesoc.unsw.edu.au/) Peer Mentor** <span style="float:right;">*2021*</span>\\
 **[UNSW CSESoc](https://www.csesoc.unsw.edu.au/) Media Subcommittee** <span style="float:right;">*2019*</span>
+
+# Recent News
