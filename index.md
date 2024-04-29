@@ -61,8 +61,8 @@ author_profile: true
     flex: 3;
     padding-right: 20px; /* Add space between the columns */
     margin-top: 0em; /* Adjusts space between list items, if necessary */
-
 }
+
 .column ul, .column ol .column li {
     margin: -10px 0px 5px 0px;
     padding-left: 20px; /* Adjusts space on the left side of the list */
@@ -79,6 +79,9 @@ author_profile: true
 @media (max-width: 768px) {
   .two-column {
     flex-direction: column;
+    padding-right: 0;
+    flex: none;
+    width: 100%;
   }
   .column {
     padding-right: 0; /* Remove padding on smaller screens */
