@@ -30,8 +30,12 @@
 }
 
 .tooltip:hover .tooltiptext {
-   visibility: visible;
-   opacity: 1;
+   visibility: hidden;
+   opacity: 0;
+   @include breakpoint($large) {
+      visibility: visible;
+      opacity: 1;
+   }
 }
 
 .tooltip:hover .label:hover  {
