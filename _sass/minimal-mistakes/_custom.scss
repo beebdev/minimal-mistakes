@@ -3,7 +3,9 @@
    ========================================================================== */
 
 .typewrite-header {
-    font-family: 'Consolas', 'Monaco', monospace; /* Fallbacks include Monaco or any monospace font */}
+   font-family: 'Consolas', 'Monaco', monospace;
+   /* Fallbacks include Monaco or any monospace font */
+}
 
 
 .tooltip {
@@ -32,12 +34,73 @@
 .tooltip:hover .tooltiptext {
    visibility: hidden;
    opacity: 0;
+
    @include breakpoint($large) {
       visibility: visible;
       opacity: 1;
    }
 }
 
-.tooltip:hover .label:hover  {
+.tooltip:hover .label:hover {
    text-decoration: underline;
+}
+
+// Two column entry title
+.tc-entry-title {
+   padding-top: 0;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+// Two column layout
+.two-column {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding-top: 0;
+}
+
+.column1 {
+   flex: 3;
+   padding-right: 20px;
+   /* Add space between the columns */
+   margin-top: 0em;
+   /* Adjusts space between list items, if necessary */
+}
+
+.column1 ul,
+.column1 ol .column1 li {
+   margin: -10px 0px 5px 0px;
+   padding-left: 20px;
+   /* Adjusts space on the left side of the list */
+}
+
+.column2 .column2-h {
+   flex: 1;
+}
+
+.column1:last-child {
+   padding-right: 0;
+   /* Ensure that the last column doesn't have padding on the right */
+}
+
+@media (max-width: 768px) {
+   .two-column {
+      flex-direction: column;
+      padding-right: 0;
+      flex: none;
+      width: 100%;
+   }
+
+   .column1 {
+      padding-right: 0;
+      flex: none;
+      /* Remove padding on smaller screens */
+   }
+   .column2 {
+      flex: none;
+   }
+   .column2-h {
+      display: none;
+   }
 }

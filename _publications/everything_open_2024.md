@@ -10,7 +10,7 @@ lk_publisher: "https://2024.everythingopen.au/"
 lk_pdf: "/assets/files/Everything-Open-Zephyr.pdf"
 # lk_code1: ""
 # lk_code2: ""
-lk_association: "/assets/images/logo/audinate.png"
+lk_association: "/assets/images/logo/dante.png"
 ---
 
 ## Everything Open 2024 - Talk #68

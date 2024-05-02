@@ -5,7 +5,7 @@
     </h4>
     <div>
         {% for author in include.publication.pub_authors %}
-            {% if author == "Po Jui Shih" %}<u>{{ author }}</u>
+            {% if author == "Po Jui Shih" or author == "Elton Shih" %}<u>{{ author }}</u>
             {% else %}{{ author }}
             {% endif %}
             {% if forloop.last == false %},{% endif %}
