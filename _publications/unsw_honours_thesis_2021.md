@@ -1,5 +1,5 @@
 ---
-title: "Hardware accelerated real-time selective genome seqeuncing"
+title: "Hardware accelerated real-time selective genome sequencing"
 pub_type: dissertation
 pub_location: "B.Eng. Honours Thesis, UNSW"
 pub_authors:

@@ -1,5 +1,5 @@
 ---
-title: "Hardware accelerated real-time selective genome seqeuncing"
+title: "Hardware accelerated real-time selective genome sequencing"
 pub_type: poster
 pub_location: "UNSW School of CSE Outstanding Honours Thesis Showcase"
 pub_authors:
