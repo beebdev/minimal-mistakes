@@ -18,6 +18,7 @@ gem "minimal-mistakes-jekyll"
 
 gem "nokogiri"
 gem "open-uri"
+gem "jemoji"
 
 group :jekyll_plugins do
     gem "jekyll-drawio"

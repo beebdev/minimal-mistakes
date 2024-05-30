@@ -6,12 +6,17 @@ author_profile: true
 <style>
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inconsolata:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inconsolata:wght@600&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 
 .a-font {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 700;
   font-style: normal;
+  /* ==== */
 }
+
 .no-copy {
   -webkit-user-drag: none; /* Prevents dragging on Webkit browsers */
   user-drag: none; /* Prevents dragging on non-Webkit browsers */
@@ -30,6 +35,37 @@ author_profile: true
   font-variation-settings:
     "wdth" 100; */
   text-align: justify;
+}
+
+.c-font {
+  /* font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal; */
+
+  /*=====*/
+  font-family: "Major Mono Display", monospace;
+  font-weight: 500;
+  font-style: italic;
+
+  /* Background color similar to a text editor */
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333333; /* Dark grey color for text for better readability */
+
+  /* Padding and border to mimic a text editor */
+  padding: 8px;
+  border-radius: 4px;
+
+  /* Optional: box shadow to give a slight elevation like VSCode */
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+
+  /* To mimic a full-width code block editor style */
+  display: block; /* or 'inline-block' if you want to keep the text inline */
+  width: 100%;
+  box-sizing: border-box;
+
+  /* Additional VSCode-like stylings */
+  white-space: pre; /* Maintains whitespace formatting */
+  overflow: auto; /* Adds horizontal scrolling if needed */
 }
 
 /* footnote */
@@ -97,11 +133,14 @@ author_profile: true
 
 </style>
 
-> <h1 class="a-font">Hello world!</h1>
-> <p class="b-font">I'm a research engineer at <a href="https://www.audinate.com/">Audinate</a> and a casual academic at <a href="https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering">UNSW CSE</a>. I previously worked with <a href="https://www.sydney.edu.au/engineering/about/our-people/academic-staff/sri-parameswaran.html">Prof. Sri Parameswaran</a>, <a href="https://www.unsw.edu.au/staff/hasindu-gamaarachchi">Dr. Hasindu Gamaarachchi</a> and <a href="https://www.linkedin.com/in/hassaan-saadat-7947a3166/">Dr. Hassaan Saadat</a> in the <a href="https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering/our-research/research-groups/embedded-systems">Embedded Systems Research Group</a> at UNSW Sydney.</p>
-> <p class="b-font">With the ongoing demand of processing throughput from big-data applications like machine learning and computational bioinformatics, designing domain-specific computing systems are important in order to keep up with the trend of data size. I am interested in the cross intersection of computer architecture and computer systems with the goal of improving the processing performance of systems. I like to get hands-on, and my work spans across hardware acceleration, embedded systems, operating systems, computer networks applied on cross disciplines such as bioinformatics and audio over IP.</p>
+> <h1 class="c-font">Hello world!</h1>
+> **`tl;dr`**, I'm a research engineer at <a href="https://www.audinate.com/">Audinate</a> where we work on the industry leading audio networking standard <a href="https://www.getdante.com/meet-dante/what-is-dante/">Dante</a>.
+> 
+> Prior to my role at Audinate, I completed my Bachelor of Engineering in Computer Engineering with Honors at UNSW, where I delved into HW-SW co-design for genome analysis within the <a href="https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering/our-research/research-groups/embedded-systems">Embedded Systems Research Group</a>. From 2020 to 2023, I also served as a casual academic in the School of Computer Science and Engineering at UNSW, engaging students as an academic tutor, lecturer, coordinator, and lab assistant in low-level systems courses. In Fall 2024, I will be starting an ECE PhD at Cornell University's [CSL](https://www.csl.cornell.edu/).
+> 
+> **`My areas of interest`**: embedded systems, systems, computer architecture, hw-sw co-design, bioinformatics, networks \\
+> \[ <a href="/assets/files/epjs_cv.pdf" >:page_facing_up:</a> \]
 
-<a href="/assets/files/epjs_cv.pdf" class="btn btn--light-outline align-center" target="_blank">CV</a>
 
 <!-- # Experience -->
 ---
