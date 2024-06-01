@@ -211,14 +211,14 @@
      background-color: #c8c8c8; /* Gray background */
      color: #000000; /* Black text */
      border: 0px solid #000000; /* Black border */
-     padding: 5px; /* Padding inside the block */
+     padding: 3px; /* Padding inside the block */
      margin: 10px 0; /* Margin between blocks */
      font-family: 'DOS', monospace; /* Font to match the terminal theme */
      box-shadow: 5px 5px 0px rgb(0, 0, 0); /* Add a subtle shadow for depth */
  
      .inner {
        background-color: #c8c8c8; /* Same gray background for inner block */
-       border: 2px solid #000000; /* Inner block border */
+       border: 2px solid #ececec; /* Inner block border */
        padding: 10px; /* Padding inside the inner block */
  
        p {

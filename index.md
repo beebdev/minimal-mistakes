@@ -175,7 +175,7 @@ author_profile: true
         <hr>
         <h2>> CAT AREAS_OF_INTEREST.TXT</h2>
         <div class="terminal-block">
-          <div class="terminal-inner">
+          <div class="inner">
             <p>embedded systems | computer architecture | networks | bioinformatics</p>
           </div>
         </div>
