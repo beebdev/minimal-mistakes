@@ -2,116 +2,96 @@
    Custom CSS
    ========================================================================== */
 
+/* Typography */
 .typewrite-header {
-   font-family: 'Consolas', 'Monaco', monospace;
-   /* Fallbacks include Monaco or any monospace font */
-}
-
-
-.tooltip {
+   font-family: 'Consolas', 'Monaco', monospace; /* Fallbacks include Monaco or any monospace font */
+ }
+ 
+ /* Tooltip */
+ .tooltip {
    position: relative;
    display: inline-block;
-}
-
-.tooltip .tooltiptext {
-   visibility: hidden;
-   width: 100px;
-   background-color: rgba(85, 85, 85, 0.8);
-   /* Dark grey background with 80% opacity */
-   color: #fff;
-   text-align: center;
-   border-radius: 6px;
-   padding: 0px;
-   position: absolute;
-   z-index: 1;
-   bottom: 125%;
-   left: 70%;
-   margin-left: -60px;
-   opacity: 0;
-   transition: opacity 0.3s;
-}
-
-.tooltip:hover .tooltiptext {
-   visibility: hidden;
-   opacity: 0;
-
-   @include breakpoint($large) {
-      visibility: visible;
-      opacity: 1;
+ 
+   .tooltiptext {
+     visibility: hidden;
+     width: 100px;
+     background-color: rgba(85, 85, 85, 0.8); /* Dark grey background with 80% opacity */
+     color: #fff;
+     text-align: center;
+     border-radius: 6px;
+     padding: 0px;
+     position: absolute;
+     z-index: 1;
+     bottom: 125%;
+     left: 70%;
+     margin-left: -60px;
+     opacity: 0;
+     transition: opacity 0.3s;
    }
-}
-
-.tooltip:hover .label:hover {
-   text-decoration: underline;
-}
-
-// Two column entry title
-.tc-entry-title {
+ 
+   &:hover .tooltiptext {
+     visibility: visible;
+     opacity: 1;
+   }
+ 
+   .label:hover {
+     text-decoration: underline;
+   }
+ }
+ 
+ /* Two column layout */
+ .tc-entry-title {
    padding-top: 0;
    margin-top: 0;
    margin-bottom: 0;
-}
-
-// Two column layout
-.two-column {
+ }
+ 
+ .two-column {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    padding-top: 0;
-}
-
-.column1 {
+ 
+   @media (max-width: 768px) {
+     flex-direction: column;
+     padding-right: 0;
+     width: 100%;
+   }
+ }
+ 
+ .column1 {
    flex: 3;
-   padding-right: 20px;
-   /* Add space between the columns */
-   margin-top: 0em;
-   /* Adjusts space between list items, if necessary */
-}
-
-.column1 ul,
-.column1 ol .column1 li {
-   margin: -10px 0px 5px 0px;
-   padding-left: 20px;
-   /* Adjusts space on the left side of the list */
-}
-
-.column2 .column2-h {
+   padding-right: 20px; /* Add space between the columns */
+   margin-top: 0em; /* Adjusts space between list items, if necessary */
+ 
+   ul,
+   ol,
+   li {
+     margin: -10px 0px 5px 0px;
+     padding-left: 20px; /* Adjusts space on the left side of the list */
+   }
+ 
+   &:last-child {
+     padding-right: 0; /* Ensure that the last column doesn't have padding on the right */
+   }
+ 
+   @media (max-width: 768px) {
+     padding-right: 0; /* Remove padding on smaller screens */
+   }
+ }
+ 
+ .column2 {
    flex: 1;
-}
-
-.column1:last-child {
-   padding-right: 0;
-   /* Ensure that the last column doesn't have padding on the right */
-}
-
-@media (max-width: 768px) {
-   .two-column {
-      flex-direction: column;
-      padding-right: 0;
-      flex: none;
-      width: 100%;
+ 
+   @media (max-width: 768px) {
+     display: none;
    }
-
-   .column1 {
-      padding-right: 0;
-      flex: none;
-      /* Remove padding on smaller screens */
-   }
-   .column2 {
-      flex: none;
-   }
-   .column2-h {
-      display: none;
-   }
-}
-
-// MS DOS intro
-
-@font-face {
+ }
+ 
+ /* MS DOS intro */
+ @font-face {
    font-family: 'DOS';
- 
    src: url("../fonts/ModernDOS9x16.ttf") format('opentype');
- 
    font-weight: normal;
    font-style: normal;
    font-kerning: none;
@@ -119,118 +99,123 @@
    font-variant-ligatures: none;
    font-variant-numeric: tabular-nums;
  }
-
-/* Add this CSS to your site's stylesheet */
-.terminal {
-   background-color: #0000b7; /* MS-DOS blue background */
-   color: #C0C0C0; /* Light gray text */
+ 
+ .terminal {
+   background-color: #efefef; /* MS-DOS blue background */
+   color: #636363; /* Light gray text */
    font-family: 'DOS', monospace;
    padding: 0px;
-   border: 0px solid #0000b7; /* Black border */
-   border-radius: 2px;
+   border: 1px solid #000000; /* Black border */
+   border-radius: 3px;
    margin: 20px 0;
-   box-shadow  : 7px 7px 4px rgb(184, 184, 184); /* Add black shadow */
+   box-shadow: 7px 7px 4px rgb(184, 184, 184); /* Add black shadow */
    position: relative; /* Ensure shadow is applied correctly */
-}
-
-.terminal b, .terminal i {
-   color: #f5f;
-}
-
-.terminal pre {
-   font-family: 'DOS', monospace; /* Ensure the font matches the terminal theme */
-   font-size: 12px; /* Adjust font size as needed */
-   margin: 0; /* Remove default margin */
-   padding: 10px 0; /* Add some padding for spacing */
-   white-space: pre-wrap; /* Ensure the ASCII art wraps properly */
-   line-height: 1; /* Adjust line height to make the art compact */
-}
-
-.terminal-header {
-   background-color: #c8c8c8; /* Cyan background for the header */
-   margin: 0px; /* Remove margin */
-   text-align:left;
-   color: #000000; /* Black text */
-   width: 100%; /* Make header span full width of terminal */
-   box-sizing: border-box; /* Ensure padding is included in the width */
-}
-
-.terminal-header p {
-   margin: 0px; /* Remove margin */
-   padding: 0px 5px; /* Add padding to the header for spacing */
-}
-
-.ascii-art {
-   display: block; /* Show ASCII art by default */
-}
-
-.simple-text {
-   display: none; /* Hide simple text by default */
-   font-family: 'DOS', monospace; /* Font to match the terminal theme */
-   font-size: large;
-}
-
-@media (max-width: 768px) {
+ 
+   b,
+   i {
+     color: rgb(213, 70, 213);
+   }
+ 
+   pre {
+     font-family: 'DOS', monospace; /* Ensure the font matches the terminal theme */
+     font-size: 12px; /* Adjust font size as needed */
+     margin: 0; /* Remove default margin */
+     padding: 10px 0; /* Add some padding for spacing */
+     white-space: pre-wrap; /* Ensure the ASCII art wraps properly */
+     line-height: 1; /* Adjust line height to make the art compact */
+   }
+ 
+   &-header {
+     background-color: #c8c8c8; /* Cyan background for the header */
+     margin: 0px; /* Remove margin */
+     text-align: left;
+     color: #000000; /* Black text */
+     width: 100%; /* Make header span full width of terminal */
+     box-sizing: border-box; /* Ensure padding is included in the width */
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 10px;
+ 
+     p {
+       margin: 0px; /* Remove margin */
+       padding: 0px 5px; /* Add padding to the header for spacing */
+     }
+   }
+ 
    .ascii-art {
+     display: block; /* Show ASCII art by default */
+ 
+     @media (max-width: 768px) {
        display: none; /* Hide ASCII art on smaller screens */
+     }
    }
+ 
    .simple-text {
+     display: none; /* Hide simple text by default */
+     font-family: 'DOS', monospace; /* Font to match the terminal theme */
+     font-size: large;
+ 
+     @media (max-width: 768px) {
        display: block; /* Show simple text on smaller screens */
+     }
    }
-}
-
-.terminal-content {
-   padding: 10px;
-   background-color: #0000b7; /* Same blue background as terminal */
-}
-
-.terminal-content h1 {
-   padding: 5px 10px;
-   margin: 0px;
-   margin-bottom: 10px;
-   background-color: #00aaaa;; /* Same blue background as terminal */
-   font-size: medium;
-   font-family: 'DOS', monospace;
-   color: #000000;
-}
-
-.terminal-content h2 {
-   margin: 0px;
-   margin-top: 5px;
-   margin-bottom: 5px;
-   color: #ff5;
-   font-size:medium;
-   font-family: 'DOS', monospace;
-}
-
-.terminal-content p {
-   margin: 0px 0;
-   font-size:medium;
-   line-height: 1.2; /* Adjust line height for closer lines */
-   margin-bottom: 10px;
-}
-
-.terminal-content a {
-   margin: 0px 0;
-   color: #ff5;
-}
-
-.terminal-block {
-   background-color: #c8c8c8; /* Gray background */
-   color: #000000; /* Black text */
-   border: 0px solid #000000; /* Black border */
-   padding: 5px; /* Padding inside the block */
-   margin: 10px 0; /* Margin between blocks */
-   font-family: 'DOS', monospace; /* Font to match the terminal theme */
-   box-shadow: 5px 5px 0px rgb(0, 0, 0); /* Add a subtle shadow for depth */
-}
-
-.terminal-inner {
-   background-color: #c8c8c8; /* Same gray background for inner block */
-   border: 2px solid #000000; /* Inner block border */
-   padding: 10px; /* Padding inside the inner block */
-}
-
-.terminal-inner p {
-   margin: 0px;
-}
+ 
+   &-content {
+     padding: 10px;
+     background-color: #ffffff; /* Same blue background as terminal */
+     border-radius: 3px;
+ 
+     h1 {
+       padding: 5px 10px;
+       margin: 0px;
+       margin-bottom: 10px;
+       background-color: #00aaaa; /* Same blue background as terminal */
+       font-size: medium;
+       font-family: 'DOS', monospace;
+       color: #000000;
+     }
+ 
+     h2 {
+       margin: 0px;
+       margin-top: 5px;
+       margin-bottom: 5px;
+       color: rgb(155, 155, 3);
+       font-size: medium;
+       font-family: 'DOS', monospace;
+     }
+ 
+     p {
+       margin: 0px 0;
+       font-size: medium;
+       line-height: 1.2; /* Adjust line height for closer lines */
+       margin-bottom: 10px;
+     }
+ 
+     a {
+       margin: 0px 0;
+       color: rgb(193, 193, 3);
+     }
+   }
+ 
+   &-block {
+     background-color: #c8c8c8; /* Gray background */
+     color: #000000; /* Black text */
+     border: 0px solid #000000; /* Black border */
+     padding: 5px; /* Padding inside the block */
+     margin: 10px 0; /* Margin between blocks */
+     font-family: 'DOS', monospace; /* Font to match the terminal theme */
+     box-shadow: 5px 5px 0px rgb(0, 0, 0); /* Add a subtle shadow for depth */
+ 
+     .inner {
+       background-color: #c8c8c8; /* Same gray background for inner block */
+       border: 2px solid #000000; /* Inner block border */
+       padding: 10px; /* Padding inside the inner block */
+ 
+       p {
+         margin: 0px;
+       }
+     }
+   }
+ }
+ 
