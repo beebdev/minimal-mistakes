@@ -133,14 +133,35 @@ author_profile: true
 
 </style>
 
-> <h1 class="c-font">Hello world!</h1>
-> **`tl;dr`**, I'm a research engineer at <a href="https://www.audinate.com/">Audinate</a> where we work on the industry leading audio networking standard <a href="https://www.getdante.com/meet-dante/what-is-dante/">Dante</a>.
-> 
-> Prior to my role at Audinate, I completed my Bachelor of Engineering in Computer Engineering with Honors at UNSW, where I delved into HW-SW co-design for genome analysis within the <a href="https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering/our-research/research-groups/embedded-systems">Embedded Systems Research Group</a>. From 2020 to 2023, I also served as a casual academic in the School of Computer Science and Engineering at UNSW, engaging students as an academic tutor, lecturer, coordinator, and lab assistant in low-level systems courses. In Fall 2024, I will be starting an ECE PhD at Cornell University's [CSL](https://www.csl.cornell.edu/).
-> 
-> **`My areas of interest`**: embedded systems, systems, computer architecture, hw-sw co-design, bioinformatics, networks \\
-> \[ <a href="/assets/files/epjs_cv.pdf" >:page_facing_up:</a> \]
-
+<div class="terminal">
+    <div class="terminal-header">
+        <p>BEEBDEV V1.0</p>
+    </div>
+    <div class="terminal-content">
+      <pre>
+██████╗ ███████╗███████╗██████╗    ██████╗  █████╗  ██████╗ ███████╗
+██╔══██╗██╔════╝██╔════╝██╔══██╗   ██╔══██╗██╔══██╗██╔════╝ ██╔════╝
+██████╔╝█████╗  █████╗  ██████╔╝   ██████╔╝███████║██║  ███╗█████╗  
+██╔══██╗██╔══╝  ██╔══╝  ██╔══██╗   ██╔═══╝ ██╔══██║██║   ██║██╔══╝  
+██████╔╝███████╗███████╗██████╔╝██╗██║     ██║  ██║╚██████╔╝███████╗
+╚═════╝ ╚══════╝╚══════╝╚═════╝ ╚═╝╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚══════╝
+        </pre>
+        <h1>Hello world!</h1>
+        <h2>> WHOAMI</h2>
+        <p>I am a research engineer at <a href="https://www.audinate.com/">Audinate</a> working on the embedded systems and computer systems side of the industry leading audio networking standard <a href="https://www.getdante.com/meet-dante/what-is-dante/">Dante</a>.</p>
+        <h2>> HISTORY</h2>
+        <p>Prior to Audinate, I earned my <i>B.Eng (Hons) in Computer Engineering</i> degree from UNSW Sydney. My honours research was on designing cost-effective hw-sw co-design systems for selective genome sequencing (nanopore). I also taught undergraduate comp courses at UNSW CSE as a tutor, lecturer, coordinator and lab assistant.</p>
+        <h2>> ./NEXT.SH</h2>
+        <p>I'll be starting an <i>ECE PhD at Cornell University</i>'s <a href="https://www.csl.cornell.edu/">CSL</a> in Fall 2024!</p>
+        <hr>
+        <h2>> CAT AREAS_OF_INTEREST.TXT</h2>
+        <div class="terminal-block">
+          <div class="terminal-inner">
+            <p>embedded systems | computer architecture | networks | bioinformatics</p>
+          </div>
+        </div>
+    </div>
+</div>
 
 <!-- # Experience -->
 ---

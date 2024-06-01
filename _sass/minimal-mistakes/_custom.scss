@@ -104,3 +104,114 @@
       display: none;
    }
 }
+
+// MS DOS intro
+
+@font-face {
+   font-family: 'DOS';
+ 
+   src: url("../fonts/ModernDOS9x16.ttf") format('opentype');
+ 
+   font-weight: normal;
+   font-style: normal;
+   font-kerning: none;
+   font-synthesis: none;
+   font-variant-ligatures: none;
+   font-variant-numeric: tabular-nums;
+ }
+
+/* Add this CSS to your site's stylesheet */
+.terminal {
+   background-color: #0000b7; /* MS-DOS blue background */
+   color: #C0C0C0; /* Light gray text */
+   font-family: 'DOS', monospace;
+   padding: 0px;
+   border: 0px solid #0000b7; /* Black border */
+   border-radius: 2px;
+   margin: 20px 0;
+   box-shadow  : 7px 7px 4px rgb(184, 184, 184); /* Add black shadow */
+   position: relative; /* Ensure shadow is applied correctly */
+}
+
+.terminal b, .terminal i {
+   color: #f5f;
+}
+
+.terminal pre {
+   font-family: 'DOS', monospace; /* Ensure the font matches the terminal theme */
+   font-size: 12px; /* Adjust font size as needed */
+   margin: 0; /* Remove default margin */
+   padding: 10px 0; /* Add some padding for spacing */
+   white-space: pre-wrap; /* Ensure the ASCII art wraps properly */
+   line-height: 1; /* Adjust line height to make the art compact */
+}
+
+.terminal-header {
+   background-color: #c8c8c8; /* Cyan background for the header */
+   margin: 0px; /* Remove margin */
+   text-align:left;
+   color: #000000; /* Black text */
+   width: 100%; /* Make header span full width of terminal */
+   box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.terminal-header p {
+   margin: 0px; /* Remove margin */
+   padding: 0px 5px; /* Add padding to the header for spacing */
+}
+
+.terminal-content {
+   padding: 10px;
+   background-color: #0000b7; /* Same blue background as terminal */
+}
+
+.terminal-content h1 {
+   padding: 5px 10px;
+   margin: 0px;
+   margin-bottom: 10px;
+   background-color: #00aaaa;; /* Same blue background as terminal */
+   font-size: medium;
+   font-family: 'DOS', monospace;
+   color: #000000;
+}
+
+.terminal-content h2 {
+   margin: 0px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   color: #ff5;
+   font-size:medium;
+   font-family: 'DOS', monospace;
+}
+
+.terminal-content p {
+   margin: 0px 0;
+   font-size:medium;
+   line-height: 1.2; /* Adjust line height for closer lines */
+   margin-bottom: 10px;
+}
+
+.terminal-content a {
+   margin: 0px 0;
+   color: #ff5;
+}
+
+.terminal-block {
+   background-color: #c8c8c8; /* Gray background */
+   color: #000000; /* Black text */
+   border: 0px solid #000000; /* Black border */
+   padding: 5px; /* Padding inside the block */
+   margin: 10px 0; /* Margin between blocks */
+   font-family: 'DOS', monospace; /* Font to match the terminal theme */
+   box-shadow: 5px 5px 0px rgb(0, 0, 0); /* Add a subtle shadow for depth */
+}
+
+.terminal-inner {
+   background-color: #c8c8c8; /* Same gray background for inner block */
+   border: 2px solid #000000; /* Inner block border */
+   padding: 10px; /* Padding inside the inner block */
+}
+
+.terminal-inner p {
+   margin: 0px;
+}
