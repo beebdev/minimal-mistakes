@@ -149,7 +149,16 @@
  
    .ascii-art {
      display: block; /* Show ASCII art by default */
- 
+     text-align: center; /* Center text inside pre tag */
+     pre {
+      display: inline-block; /* Center the pre tag */
+      text-align: left; /* Keep ASCII art text alignment left */
+      margin: 0; /* Remove default margin */
+      padding: 10px 0; /* Add some padding for spacing */
+      white-space: pre-wrap; /* Ensure the ASCII art wraps properly */
+      line-height: 1; /* Adjust line height to make the art compact */
+    }
+     
      @media (max-width: 768px) {
        display: none; /* Hide ASCII art on smaller screens */
      }
@@ -159,6 +168,15 @@
      display: none; /* Hide simple text by default */
      font-family: 'DOS', monospace; /* Font to match the terminal theme */
      font-size: x-small;
+     text-align: center; /* Center text inside pre tag */
+     pre {
+      display: inline-block; /* Center the pre tag */
+      text-align: left; /* Keep ASCII art text alignment left */
+      margin: 0; /* Remove default margin */
+      padding: 10px 0; /* Add some padding for spacing */
+      white-space: pre-wrap; /* Ensure the ASCII art wraps properly */
+      line-height: 1; /* Adjust line height to make the art compact */
+    }
  
      @media (max-width: 768px) {
        display: block; /* Show simple text on smaller screens */
