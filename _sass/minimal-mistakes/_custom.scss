@@ -160,6 +160,25 @@
    padding: 0px 5px; /* Add padding to the header for spacing */
 }
 
+.ascii-art {
+   display: block; /* Show ASCII art by default */
+}
+
+.simple-text {
+   display: none; /* Hide simple text by default */
+   font-family: 'DOS', monospace; /* Font to match the terminal theme */
+   font-size: large;
+}
+
+@media (max-width: 768px) {
+   .ascii-art {
+       display: none; /* Hide ASCII art on smaller screens */
+   }
+   .simple-text {
+       display: block; /* Show simple text on smaller screens */
+   }
+}
+
 .terminal-content {
    padding: 10px;
    background-color: #0000b7; /* Same blue background as terminal */

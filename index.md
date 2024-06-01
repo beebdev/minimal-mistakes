@@ -138,7 +138,8 @@ author_profile: true
         <p>BEEBDEV V1.0</p>
     </div>
     <div class="terminal-content">
-      <pre>
+        <div class="ascii-art">
+        <pre>
 ██████╗ ███████╗███████╗██████╗    ██████╗  █████╗  ██████╗ ███████╗
 ██╔══██╗██╔════╝██╔════╝██╔══██╗   ██╔══██╗██╔══██╗██╔════╝ ██╔════╝
 ██████╔╝█████╗  █████╗  ██████╔╝   ██████╔╝███████║██║  ███╗█████╗  
@@ -146,6 +147,8 @@ author_profile: true
 ██████╔╝███████╗███████╗██████╔╝██╗██║     ██║  ██║╚██████╔╝███████╗
 ╚═════╝ ╚══════╝╚══════╝╚═════╝ ╚═╝╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚══════╝
         </pre>
+        </div>
+        <div class="simple-text">BEEBDEV</div>
         <h1>Hello world!</h1>
         <h2>> WHOAMI</h2>
         <p>I am a research engineer at <a href="https://www.audinate.com/">Audinate</a> working on the embedded systems and computer systems side of the industry leading audio networking standard <a href="https://www.getdante.com/meet-dante/what-is-dante/">Dante</a>.</p>
