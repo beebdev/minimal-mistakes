@@ -10,20 +10,6 @@ author_profile: true
 
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 
-@font-face {
-  font-family: 'Austin';
-  src: url('/assets/fonts/Austin-Medium-Trial.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Graphik';
-  src: url('/assets/fonts/Graphik-Medium-Trial.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 .intro-text {
   font-family: 'Graphik', sans-serif;
   font-style: normal;
@@ -110,7 +96,10 @@ hr {
 <!-- ==================================================== -->
 <!-- INTRO SECTION -->
 <!-- ==================================================== -->
-<div style="display: grid; gap: 8px; grid-template-columns: 1fr 4fr;">
+
+<div style="display: grid; gap: 8px; grid-template-columns: 1fr 3fr;">
+    <!-- <img src="/assets/i    ages/profile/main.jpeg" alt="icon" style="width: auto; height: 100%;"> -->
+    
     <svg width="150" height="150" xmlns="http://www.w3.org/2000/svg">
         <circle cx="50" cy="50" r="25" fill="#007bff" />
         <circle cx="100" cy="50" r="25" fill="#004f45" />
@@ -124,24 +113,21 @@ hr {
     </svg>
     <!-- seperation -->
     <span>
-    <p class="intro-text"><span>My name is <span style="text-decoration:underline">Elton Shih</span>.</span></p>
+    <p class="intro-text" style="padding-top: 10px;"><span>My name is <span style="text-decoration:underline">Elton Shih</span>.</span></p>
     <p class="intro-text"><span style="font-style:normal;font-weight:500;font-family:Graphik;font-size:46px;letter-spacing:-1.7px"><span style="color:rgba(0, 0, 0, 1)">I'm an </span><span style="color:rgba(255, 72, 40, 1)">Embedded Engineer,</span><span style="color:rgba(255, 255, 255, 1)"> </span><span style="color:rgba(238, 136, 34, 1)">Researcher,</span><span style="color:rgba(255, 255, 255, 1)"> </span><span style="color:rgba(0, 0, 0, 1)">and </span><span style="color:rgba(0, 128, 255, 1)">Cat Dad</span></span></p>
     </span>
 </div>
 
-<!-- ========= -->
-<!-- Symbols -->
-<div style="padding-top: 20px;padding-bottom: 0px;padding-left: 0px;display: flex; gap: 4px; align-items: center;">
+<div style="max-width: 98%; padding-top: 0px;padding-bottom: 0px;padding-left: 0px;display: flex; gap: 4px; align-items: center;">
     <div style=" width: 91px; height: 122px; z-index: 322;"><img src="/assets/images/symbols/a.png"></div>
     <div style=" width: 237px; height: 153px; z-index: 323; transform: rotate(45deg);"><img src="/assets/images/symbols/b.png"></div>    
     <div style=" width: 150px; height: 35px; z-index: 324; transform: rotate(135deg);"><img src="/assets/images/symbols/c.png"></div>    
     <div style=" width: 248px; height: 153px; z-index: 325; transform: rotate(-135deg);"><img src="/assets/images/symbols/d.png"></div>    
-    <!-- <div style=" width: 128px; height: 120px; z-index: 326; transform: rotate(-90deg);"><img src="/assets/images/symbols/e.png"></div>     -->
     <div style=" width: 92px; height: 122px; z-index: 327; transform: rotate(-90deg);"><img src="/assets/images/symbols/f.png"></div>    
 </div>
 
 
-<div style="padding-top: 20px;padding-bottom: 20px;display: flex; gap: 4px; align-items: center;">
+<div style="padding-top: 20px;padding-bottom: 10px;display: flex; gap: 4px; align-items: center;">
     <span style="white-space: nowrap; display: inline-flex; align-items: center; height: 8px; width: 8px; background-color: #ffffff; color: #000000; box-shadow: currentcolor 0px 0px 0px 1px inset;"></span>
     <span style="white-space: nowrap; display: inline-flex; align-items: center; height: 8px; width: 8px; background-color: #000000; color: #ffffff; font-size: 10px;"></span>
     <hr style="background-color: rgb(255, 255, 255); border-bottom: 1px solid rgb(0, 0, 0); border-color: transparent transparent rgb(0, 0, 0); width: 100%;margin=0;">
@@ -150,7 +136,24 @@ hr {
     <span style="display: inline-flex; align-items: center; padding: 2px 4px; border-radius: 0px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); box-shadow: currentcolor 0px 0px 0px 1px inset; font-size: 10px; white-space: nowrap;">Ithaca</span>
 </div>
 
-<div style="padding-bottom: 30px;"></div>
+
+<!-- ========= -->
+<div style="padding-bottom: 40px;"></div>
+
+<div style="display: grid; gap: 30px; grid-template-columns: 1fr 3fr;">
+    <div style="width: 100%; aspect-ratio: 6 / 4; min-height: 40px; box-shadow: currentcolor 0px 0px 0px 1px inset; background: repeating-radial-gradient(circle at 100% center, currentcolor, currentcolor 1px, transparent 1px, transparent 6px);"></div>
+    <div style="text-align: right; color: #1a40ff; font-family: 'Arial'; font-size: 18px; line-height: 1.6;">
+        <p style="margin-top: 0px; margin-bottom: 0px;"> <span style="font-family: 'Graphik-Bold';font-size: large;">beebdev</span>
+            is the alias of <u>Elton Shih</u>, a Taiwanese-Australian Engineer based in Ithaca, New York.
+            He is currently pursing a Ph.D. in Electrical and Computer Engineering at Cornell University in the CSL lab.
+            Prior to the ongoing Ph.D. stint, Elton was a Research Engineer at Audinate and taught computing systems courses at UNSW Sydney.
+            Reach out if you're interested in his work or just want to chat about tech, music, or cats.
+        </p>
+    </div>
+</div>
+
+
+<div style="padding-bottom: 120px;"></div>
 
 
 <!-- ==================================================== -->

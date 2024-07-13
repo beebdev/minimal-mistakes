@@ -8,6 +8,29 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+
+@font-face {
+  font-family: 'Austin';
+  src: url('/assets/fonts/Austin-Medium-Trial.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('/assets/fonts/Graphik-Medium-Trial.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik-Bold';
+    src: url('/assets/fonts/GraphikCompact-BlackItalic-Trial.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 html {
     font-size: 14px; // change to whatever
   
