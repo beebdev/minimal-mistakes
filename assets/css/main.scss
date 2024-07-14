@@ -37,8 +37,15 @@ search: false
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'SuperWoobly';
+  src: url('/assets/fonts/SuperWoobly-8MJlz.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
-    font-size: 14px; // change to whatever
+    cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0iIzFGNEU0NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiByeD0iNSIvPgo8L3N2Zz4='), auto;    font-size: 14px; // change to whatever
   
     @include breakpoint($medium) {
       font-size: 12px; // change to whatever
@@ -75,4 +82,23 @@ p{
 .fa-linkedin,
 .fa-linkedin-in {
   color: $background-color;
+}
+
+
+// HEADER
+.masthead__menu-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure it takes the full height of the parent element */
+  font-size: 32px;
+}
+
+// FOOTER
+.my__footer {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  height: 100%; /* Ensure it takes the full height of the parent element */
+  font-size: 12px;
 }

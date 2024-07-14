@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "contrast" # "default" # "air", "aqua", "contrast", "
 
 # Site Settings
 locale                   : "en-US"
-title                    : "elton's page"
+title                    : "beeb.page"
 title_separator          : "-"
 subtitle                 : " beep boop beep" # site tagline that appears below site title in masthead
 name                     : "Elton (Po Jui) Shih"
