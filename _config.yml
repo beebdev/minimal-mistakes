@@ -20,7 +20,7 @@ title                    : "elton's page"
 title_separator          : "-"
 subtitle                 : " beep boop beep" # site tagline that appears below site title in masthead
 name                     : "Elton (Po Jui) Shih"
-description              : "A very usual website from a very usual dude."
+description              : "A very usual website of a very usual guy."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"

@@ -20,14 +20,31 @@ author_profile: true
 }
 
 .banished-on-mobile {
-  display:flex
+  display: flex;
+}
+
+.responsive-container {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
 }
 
 @media (max-width: 768px) {
   .banished-on-mobile {
     display: none !important;
   }
+
+  .responsive-container {
+    display: block;
+    text-align: center;
+  }
+
+  .responsive-text {
+    text-align: center;
+  }
 }
+
 
 .smaller-on-mobile {
   font-size: 12px;
@@ -137,24 +154,25 @@ hr {
 
 
 <!-- ==================================================== -->
-<!-- INTRODUCTION SECTION -->
+<!-- INTRODUCTION VISUALS -->
 <!-- ==================================================== -->
 
 <span style="max-width: 75%;">
   <p class="intro-text" style="padding-top: 10px;"><span>My name is <span style="text-decoration:underline">Elton Shih</span>.</span></p>
-  <p class="intro-text"><span><span style="color:rgba(0, 0, 0, 1)">I'm an </span><span style="color:rgba(255, 72, 40, 1)">Embedded Engineer,</span><span style="color:rgba(255, 255, 255, 1)"> </span><span style="color:rgba(238, 136, 34, 1)">Researcher,</span><span style="color:rgba(255, 255, 255, 1)"> </span><span style="color:rgba(0, 0, 0, 1)">and </span><span style="color:rgba(0, 128, 255, 1)">Cat Dad</span>.</span></p>
+  <p class="intro-text"><span><span style="color:rgba(0, 0, 0, 1)">I'm an </span><span style="color:rgba(255, 72, 40, 1)">Embedded Engineer,</span></span></p>
+  <p class="intro-text"><span><span style="color:rgba(238, 136, 34, 1)">Researcher,</span><span style="color:rgba(255, 255, 255, 1)"> </span><span style="color:rgba(0, 0, 0, 1)">and </span><span style="color:rgba(0, 128, 255, 1)">Cat Dad</span>.</span></p>
 </span>
 
-<div style="max-height: 100%; max-width: 100%; padding-top: 40px;padding-bottom: 0px;padding-left: 0px;display: flex; gap: 10px; align-items: center;">
-    <div style="width: auto; height: 65%; display: flex; justify-content: center; align-items: center; "><img src="/assets/images/symbols/a.png" style="width: 80%; height: auto; center;"></div>
-    <div style="width: auto; height: 65%; display: flex; justify-content: center; align-items: center; "><img src="/assets/images/symbols/b.png" style="width: 80%; height: auto; center;"></div>    
-    <div style="width: auto; height: 65%; display: flex; justify-content: center; align-items: center; "><img src="/assets/images/symbols/c.png" style="width: 80%; height: auto; center;"></div>    
-    <div style="width: auto; height: 65%; display: flex; justify-content: center; align-items: center; "><img src="/assets/images/symbols/d.png" style="width: 80%; height: auto; center;"></div>    
-    <div style="width: auto; height: 65%; display: flex; justify-content: center; align-items: center; "><img src="/assets/images/symbols/e.png" style="width: 80%; height: auto; center;"></div>    
+<div style="max-height: 100%; max-width: 100%; padding-top: 30px;padding-bottom: 0px;padding-left: 0px;display: flex; gap: 10px; align-items: center;">
+    <div style="width: auto; height: 65%; display: flex; justify-content: center; align-items: center; "><img src="/assets/images/symbols/a.png" style="width: 65%; height: auto; center;"></div>
+    <div style="width: auto; height: 65%; display: flex; justify-content: center; align-items: center; "><img src="/assets/images/symbols/b.png" style="width: 65%; height: auto; center;"></div>    
+    <div style="width: auto; height: 65%; display: flex; justify-content: center; align-items: center; "><img src="/assets/images/symbols/c.png" style="width: 65%; height: auto; center;"></div>    
+    <div style="width: auto; height: 65%; display: flex; justify-content: center; align-items: center; "><img src="/assets/images/symbols/d.png" style="width: 65%; height: auto; center;"></div>    
+    <div style="width: auto; height: 65%; display: flex; justify-content: center; align-items: center; "><img src="/assets/images/symbols/e.png" style="width: 65%; height: auto; center;"></div>    
 </div>
 
 
-<div style="padding-top: 20px;padding-bottom: 10px;display: flex; gap: 4px; align-items: center;">
+<div style="padding-top: 10px;padding-bottom: 10px;display: flex; gap: 4px; align-items: center;">
     <span style="white-space: nowrap; display: inline-flex; align-items: center; height: 8px; width: 8px; background-color: #ffffff; color: #000000; box-shadow: currentcolor 0px 0px 0px 1px inset;"></span>
     <span style="white-space: nowrap; display: inline-flex; align-items: center; height: 8px; width: 8px; background-color: #000000; color: #ffffff; font-size: 10px;"></span>
     <hr style="background-color: rgb(255, 255, 255); border-bottom: 1px solid rgb(0, 0, 0); border-color: transparent transparent rgb(0, 0, 0); width: 100%;margin=0;">
@@ -164,33 +182,36 @@ hr {
 </div>
 
 
-<!-- ========= -->
-<div style="padding-bottom: 30px;"></div>
 
-<div style="display: grid; gap: 30px; grid-template-columns: 1fr 3fr;">
-    <div style="width: 100%; aspect-ratio: 6 / 4; min-height: 40px; box-shadow: currentcolor 0px 0px 0px 1px inset; background: repeating-radial-gradient(circle at 100% center, currentcolor, currentcolor 1px, transparent 1px, transparent 6px);"></div>
-    <div style="text-align: right; color: #1a40ff; font-family: 'Arial'; font-size: 18px; line-height: 1.6;">
-        <p style="margin-top: 0px; margin-bottom: 0px;"> <span style="font-family: 'Graphik-Bold';font-size: large;">beebdev</span>
-            is the alias of Elton Shih, a Taiwanese-Australian Engineer currently based in Sydney Australia. He works as a research engineer at Audinate, the maker of Dante audio networking.
-            Elton's work spans across the domains of computer systems, architecture, and embedded systems. He used to teach computing systems courses at UNSW Sydney.
-            As of Fall 2024, Elton will be starting a Ph.D. in ECE at Cornell University in the CSL lab.
-            Reach out if you're interested in his work or just want to chat about tech, music, or cats.
-            <!-- is the alias of <u>Elton Shih</u>, a Taiwanese-Australian Engineer based in Ithaca, New York.
-            He is currently pursing a Ph.D. in Electrical and Computer Engineering at Cornell University in the CSL lab.
-            Prior to the ongoing Ph.D. stint, Elton was a Research Engineer at Audinate and taught computing systems courses at UNSW Sydney.
-            Reach out if you're interested in his work or just want to chat about tech, music, or cats.
-        </p> -->
+<!-- ==================================================== -->
+<!-- INTRODUCTION TEXT -->
+<!-- ==================================================== -->
+<div style="padding-bottom: 20px;"></div>
+<div class="responsive-container">
+    <div class="banished-on-mobile" style="display: flex; align-items: center; justify-content: center; width: 100%; aspect-ratio: 6 / 3; min-height: 40px; box-shadow: currentcolor 0px 0px 0px 1px inset; background: repeating-radial-gradient(circle at 100% center, currentcolor, currentcolor 1px, transparent 1px, transparent 6px);">
+        <img src="" alt="本当に、楽しんでください" style="max-width: 100%; height: auto;">
+    </div>
+    <div style="text-align: right; color: #1a40ff; font-family: 'Graphik-Italic'; font-size: 18px; line-height: 1.6;">
+        <p style="margin-top: 0px; margin-bottom: 0px;"> <span style="font-family: 'Graphik-Bold';font-size: large;">Elton</span>
+        is a Taiwanese-Australian Engineer currently based in Sydney Australia. He works as a research engineer at Audinate, the maker of Dante audio networking.
+        Elton's work spans across the domains of computer systems, architecture, and embedded systems. He used to teach computing systems courses at UNSW Sydney.
+        As of Fall 2024, Elton will be starting a Ph.D. in ECE at Cornell University in the CSL lab.
+        Reach out if you're interested in his work or just want to chat about tech, music, or cats.
+        <!-- is the alias of <u>Elton Shih</u>, a Taiwanese-Australian Engineer based in Ithaca, New York.
+        He is currently pursing a Ph.D. in Electrical and Computer Engineering at Cornell University in the CSL lab.
+        Prior to the ongoing Ph.D. stint, Elton was a Research Engineer at Audinate and taught computing systems courses at UNSW Sydney.
+        Reach out if you're interested in his work or just want to chat about tech, music, or cats.
+    </p> -->
     </div>
 </div>
 
-
-<div style="padding-bottom: 120px;"></div>
 
 
 <!-- ==================================================== -->
 <!-- EXPERIENCE -->
 <!-- ==================================================== -->
 
+<div style="padding-bottom: 120px;"></div>
 <div style="display: grid; gap: 20px; grid-template-columns: 1fr 4fr;">
 <h1 class="index_section">EXPERIENCE</h1>
 <section style="display: grid; max-width: 100%; gap: 8px; grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 1fr)); margin-top: 8px;">

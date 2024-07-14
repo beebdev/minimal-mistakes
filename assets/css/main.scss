@@ -30,6 +30,12 @@ search: false
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'Graphik-Italic';
+  src: url('/assets/fonts/GraphikCompact-RegularItalic-Trial.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 html {
     font-size: 14px; // change to whatever
