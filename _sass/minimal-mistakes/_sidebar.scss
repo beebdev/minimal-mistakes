@@ -124,6 +124,8 @@
   height: auto;
   max-height: 200px;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 0;
 
   @include breakpoint($large) {
     display: block;
