@@ -117,10 +117,24 @@
    Author profile and links
    ========================================================================== */
 
+.author__container{
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  align-items: center;
+
+  @include breakpoint($large) {
+    display: block;
+    max-height: 800px;
+  }
+}
+
 .author__avatar {
   display: table-cell;
   vertical-align: top;
-  width: 40%;
+  width: 100%;
   height: auto;
 
   @include breakpoint($large) {
@@ -154,7 +168,7 @@
   vertical-align: middle;
   padding-left: 15px;
   padding-right: 25px;
-  line-height: 1;
+  // line-height: 1;
   text-align: right;
 
   @include breakpoint($large) {
@@ -164,11 +178,6 @@
     padding-right: 0;
     text-align: left;
   }
-
-  // a {
-    // color: inherit;
-    // text-decoration: none;
-  // }
 }
 
 .author__name {
