@@ -102,3 +102,14 @@ p{
   height: 100%; /* Ensure it takes the full height of the parent element */
   font-size: 12px;
 }
+
+
+.no-copy {
+  -webkit-user-drag: none; /* Prevents dragging on Webkit browsers */
+  user-drag: none; /* Prevents dragging on non-Webkit browsers */
+  -webkit-user-select: none; /* Prevents text selection on Webkit browsers */
+  -moz-user-select: none; /* Prevents text selection on Firefox */
+  -ms-user-select: none; /* Prevents text selection on Internet Explorer/Edge */
+  user-select: none; /* Prevents text selection on non-Webkit browsers */
+  pointer-events: none; /* Prevents click events such as right-click save image */
+}

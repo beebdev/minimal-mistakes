@@ -4,10 +4,6 @@ author_profile: true
 ---
 
 <style>
-/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inconsolata:wght@600&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inconsolata:wght@600&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap'); */
 
 .banished-on-bigscreen {
   display: none;
@@ -92,70 +88,7 @@ author_profile: true
     font-size: 42px;
   }
 }
-
-/* =========================== */
-/* Stuff I want to retire v    */
-/* =========================== */
-
-/* make margin before and after hr more */
-hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.no-copy {
-  -webkit-user-drag: none; /* Prevents dragging on Webkit browsers */
-  user-drag: none; /* Prevents dragging on non-Webkit browsers */
-  -webkit-user-select: none; /* Prevents text selection on Webkit browsers */
-  -moz-user-select: none; /* Prevents text selection on Firefox */
-  -ms-user-select: none; /* Prevents text selection on Internet Explorer/Edge */
-  user-select: none; /* Prevents text selection on non-Webkit browsers */
-  pointer-events: none; /* Prevents click events such as right-click save image */
-}
-
-.two-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.main-column {
-    flex: 4;
-    padding-right: 20px; /* Add space between the columns */
-    margin-top: 0em; /* Adjusts space between list items, if necessary */
-    line-height: 1;
-}
-
-.main-column ul, .main-column ol .main-column li {
-    margin: 0px 0px 5px 0px;
-    padding-left: 20px; /* Adjusts space on the left side of the list */
-}
-
-.secondary-column {
-  flex: 1;
-}
-
-.main-column:last-child {
-  padding-right: 0; /* Ensure that the last column doesn't have padding on the right */
-}
-
-@media (max-width: 768px) {
-  .two-section {
-    flex-direction: column;
-    padding-right: 0;
-    flex: none;
-    width: 100%;
-  }
-  .main-column {
-    padding-right: 0; /* Remove padding on smaller screens */
-  }
-  .secondary-column {
-    display: none;
-  }
-}
-
 </style>
-
 
 <!-- ==================================================== -->
 <!-- INTRODUCTION VISUALS -->
@@ -168,7 +101,7 @@ hr {
   <p class="intro-text"><span><span style="color:rgba(238, 136, 34, 1)">Researcher,</span><span style="color:rgba(255, 255, 255, 1)"> </span><span style="color:rgba(0, 0, 0, 1)">and </span><span style="color:rgba(0, 128, 255, 1)">Cat Dad</span>.</span></p>
 </span>
 
-<div style="max-height: 100%; max-width: 100%; padding-top: 30px;padding-bottom: 10px;padding-left: 0px;display: flex; gap: 10px; align-items: center;">
+<div class="no-copy" style="max-height: 100%; max-width: 100%; padding-top: 30px;padding-bottom: 10px;padding-left: 0px;display: flex; gap: 10px; align-items: center;">
     <div style="width: auto; height: 65%; display: flex; justify-content: center; align-items: center; "><img src="/assets/images/symbols/a.png" style="width: 65%; height: auto; center;"></div>
     <div style="width: auto; height: 65%; display: flex; justify-content: center; align-items: center; "><img src="/assets/images/symbols/b.png" style="width: 65%; height: auto; center;"></div>    
     <div style="width: auto; height: 65%; display: flex; justify-content: center; align-items: center; "><img src="/assets/images/symbols/c.png" style="width: 65%; height: auto; center;"></div>    
@@ -193,7 +126,7 @@ hr {
 <!-- ==================================================== -->
 <div style="padding-bottom: 15px;"></div>
 <div class="responsive-container">
-    <div class="banished-on-mobile" style="display: flex; align-items: center; justify-content: center; width: 100%; aspect-ratio: 6 / 3; min-height: 40px; box-shadow: currentcolor 0px 0px 0px 1px inset; background: repeating-radial-gradient(circle at 100% center, currentcolor, currentcolor 1px, transparent 1px, transparent 6px);">
+    <div class="no-copy banished-on-mobile" style="display: flex; align-items: center; justify-content: center; width: 100%; aspect-ratio: 6 / 3; min-height: 40px; box-shadow: currentcolor 0px 0px 0px 1px inset; background: repeating-radial-gradient(circle at 100% center, currentcolor, currentcolor 1px, transparent 1px, transparent 6px);">
         <img src="" alt="本当に、楽しんでください" style="max-width: 100%; height: auto;">
     </div>
     <div style="text-align: right; color: #1a40ff; font-family: 'Graphik-Italic'; font-size: 18px; line-height: 1.6;">
@@ -233,34 +166,34 @@ hr {
 
 <div style="margin-top: 4px; display: flex; flex-direction: column; gap: 0px;">
   <div style="display: flex; justify-content: space-between; align-items: center; ">
-      <div><strong>Audinate, CTO Office</strong></div> <span style="font-family:'SuperWoobly';text-align: right; flex: 0 0 200px;"><em><strong>Sydney, Aus</strong></em></span>
+      <div><strong>Audinate, CTO Office</strong></div> <span style="font-family:'SuperWoobly';text-align: right; flex: 0 0 auto;"><em><strong>Sydney, Aus</strong></em></span>
   </div>
   <div style="display: flex; justify-content: space-between; align-items: center;">
-      <div>Research Engineer II</div> <span style="text-align: right; flex: 0 0 200px;"><em>Aug 2023 - <strong>Present</strong></em></span>
+      <div>Research Engineer II</div> <span style="text-align: right; flex: 0 0 auto;"><em>Aug 2023 - <strong>Present</strong></em></span>
   </div>
   <div style="display: flex; justify-content: space-between; align-items: center;">
-      <div>Research Engineer I</div> <span style="text-align: right; flex: 0 0 200px;"><em>Jan 2022 - Jul 2023</em></span>
+      <div>Research Engineer I</div> <span style="text-align: right; flex: 0 0 auto;"><em>Jan 2022 - Jul 2023</em></span>
   </div>
   <div style="display: flex; justify-content: space-between; align-items: center; ">
-      <div>R&D Intern</div> <span style="text-align: right; flex: 0 0 200px;"><em>2019 / 2020 / 2021</em></span>
+      <div>R&D Intern</div> <span style="text-align: right; flex: 0 0 auto;"><em>2019 / 2020 / 2021</em></span>
   </div>
 </div>
 
 <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 0px;">
   <div style="display: flex; justify-content: space-between; align-items: center; ">
-      <div><strong>UNSW, School of CSE</strong></div> <span style="font-family:'SuperWoobly';text-align: right; flex: 0 0 150px;"><em><strong>Sydney, Aus</strong></em></span>
+      <div><strong>UNSW, School of CSE</strong></div> <span style="font-family:'SuperWoobly';text-align: right; flex: 0 0 auto;"><em><strong>Sydney, Aus</strong></em></span>
   </div>
   <div style="display: flex; justify-content: space-between; align-items: center;">
-      <div>Casual Academic</div> <span style="text-align: right; flex: 0 0 200px;"><em>Feb 2020 - <strong>Present</strong></em></span>
+      <div>Casual Academic</div> <span style="text-align: right; flex: 0 0 auto;"><em>Feb 2020 - <strong>Present</strong></em></span>
   </div>
 </div>
 
 <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 0px;">
   <div style="display: flex; justify-content: space-between; align-items: center; ">
-      <div><strong>UNSW, Embedded Systems Research Group</strong></div> <span style="font-family:'SuperWoobly';text-align: right; flex: 0 0 150px;"><em><strong>Sydney, Aus</strong></em></span>
+      <div><strong>UNSW, Embedded Systems Research Group</strong></div> <span style="font-family:'SuperWoobly';text-align: right; flex: 0 0 auto;"><em><strong>Sydney, Aus</strong></em></span>
   </div>
   <div style="display: flex; justify-content: space-between; align-items: center;">
-      <div>Undergraduate Researcher</div> <span style="text-align: right; flex: 0 0 200px;"><em>Nov 2020 - May 2022</em></span>
+      <div>Undergraduate Researcher</div> <span style="text-align: right; flex: 0 0 auto;"><em>Nov 2020 - May 2022</em></span>
   </div>
 </div>
 
@@ -283,7 +216,7 @@ hr {
         <li style="margin-bottom: 0px;">Advisor: <a href="https://www.csl.cornell.edu/~cbatten/index.html">Prof. Christopher Batten</a></li>
         <li style="margin-bottom: 0px;">Research Area: Computer Systems and Architecture</li>
         </ul>
-      </div> <span style="margin-top: 6px; text-align: right; flex: 0 0 auto;"><img src="assets/images/logo/cornell.svg" alt="Cornell logo" class="no-copy" width="80" height="auto" /></span>
+      </div> <span class="no-copy" style="margin-top: 6px; text-align: right; flex: 0 0 auto;"><img src="assets/images/logo/cornell.svg" alt="Cornell logo" class="no-copy" width="80" height="auto" /></span>
   </div>
 </div>
 
@@ -302,7 +235,7 @@ hr {
         <li style="margin-bottom: 0px;">Thesis title: <em>"Hardware Accelerated Real-Time Selective Genome Sequencing"</em></a></li>
         <li style="margin-bottom: 0px;">Advisor: <a href="https://www.sydney.edu.au/engineering/about/our-people/academic-staff/sri-parameswaran.html">Prof. Sri Parameswaran</a> <span style="font-size: 10.5px;"> (co-advised by <a href="https://www.unsw.edu.au/staff/hasindu-gamaarachchi">Dr. Hasindu Gamaarachchi</a> & <a href="https://www.linkedin.com/in/hassaan-saadat-7947a3166">Dr. Hassaan Saadat</a>)</span></li>
         </ul>
-      </div><span style="margin-top: 10px; text-align: right; flex: 0 0 auto;"><img src="assets/images/logo/unsw.png" alt="UNSW logo" class="no-copy" width="80" height="auto" /></span>
+      </div><span class="no-copy" style="margin-top: 10px; text-align: right; flex: 0 0 auto;"><img src="assets/images/logo/unsw.png" alt="UNSW logo" class="no-copy" width="80" height="auto" /></span>
   </div>
 </div>
 
@@ -397,7 +330,7 @@ hr {
 <div style="padding-bottom:60px;"></div>
 <h1 class="index_section" style="font-family: 'SuperWoobly';">MEOW</h1>
 <p style="font-family: 'SuperWoobly';"><strong>Second Author</strong><br>
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(15%, 1fr)); gap: 8px; padding: 0px;">
+<div class="no-copy" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; padding: 0;">
   <div style="overflow: hidden; border-radius: 8px; ">
       <img src="/assets/images/naomi/naomi_a.jpeg" alt="naomi_a" style="width: 100%; height: auto; display: block;">
   </div>
