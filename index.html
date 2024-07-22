@@ -4,90 +4,90 @@ author_profile: true
 ---
 
 <style>
+    .banished-on-bigscreen {
+        display: none;
+    }
 
-.banished-on-bigscreen {
-  display: none;
-}
+    @media (max-width: 768px) {
+        .banished-on-bigscreen {
+            display: flex;
+        }
+    }
 
-@media (max-width: 768px) {
-  .banished-on-bigscreen {
-    display: flex;
-  }
-}
+    .banished-on-mobile {
+        display: flex;
+    }
 
-.banished-on-mobile {
-  display: flex;
-}
+    .responsive-container {
+        display: grid;
+        gap: 40px;
+        grid-template-columns: 1fr 3fr;
+        align-items: center;
+    }
 
-.responsive-container {
-    display: grid;
-    gap: 40px;
-    grid-template-columns: 1fr 3fr;
-    align-items: center;
-}
+    @media (max-width: 768px) {
+        .banished-on-mobile {
+            display: none !important;
+        }
 
-@media (max-width: 768px) {
-  .banished-on-mobile {
-    display: none !important;
-  }
+        .responsive-container {
+            display: block;
+            text-align: center;
+        }
 
-  .responsive-container {
-    display: block;
-    text-align: center;
-  }
-
-  .responsive-text {
-    text-align: center;
-  }
-}
+        .responsive-text {
+            text-align: center;
+        }
+    }
 
 
-.smaller-on-mobile {
-  font-size: 12px;
-}
+    .smaller-on-mobile {
+        font-size: 12px;
+    }
 
-@media (max-width: 768px) {
-  .smaller-on-mobile {
-    font-size: 10px;
-    width: 100%;
-    height: auto;
-  }
-}
+    @media (max-width: 768px) {
+        .smaller-on-mobile {
+            font-size: 10px;
+            width: 100%;
+            height: auto;
+        }
+    }
 
-/* =========================== */
-/* Introduction section        */
-/* =========================== */
-.intro-text {
-  font-family: 'Graphik', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 46px;
-  letter-spacing: -1.7px;
-  color: rgba(0, 0, 0, 1);
-  line-height:48px;
-  margin: 0;
-  text-align: right;
-}
+    /* =========================== */
+    /* Introduction section        */
+    /* =========================== */
+    .intro-text {
+        font-family: 'Graphik', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 52px;
+        letter-spacing: -1.7px;
+        color: rgba(0, 0, 0, 1);
+        line-height: 56px;
+        margin: 0;
+        text-align: right;
+    }
 
-@media (max-width: 768px) {
-  .intro-text {
-    font-size: 24px;
-    line-height: 38px;
-  }
-}
+    @media (max-width: 768px) {
+        .intro-text {
+            font-size: 28px;
+            line-height: 38px;
+        }
+    }
 
-.index_section {
-  font-family: "Austin", monospace;
-  font-weight: 1000;
-  font-style: normal;
-  font-size: 50px;
-  margin-bottom: 0px; /* Add space between sections */
-  color: #000000;
+    .index_section {
+        font-family: "Austin", monospace;
+        font-weight: 1000;
+        font-style: normal;
+        font-size: 50px;
+        margin-bottom: 0px;
+        /* Add space between sections */
+        color: #000000;
 
-  @media (max-width: 768px) {
-    font-size: 42px;
-  }
-}
+        @media (max-width: 768px) {
+            font-size: 42px;
+        }
+    }
 </style>
 
 <!-- ==================================================== -->
@@ -96,27 +96,42 @@ author_profile: true
 
 <div style="margin-top: 15px;"></div>
 <span style="max-width: 75%;">
-  <p class="intro-text" style="padding-top: 10px;"><span>My name is <span style="text-decoration:underline">Elton Shih</span>.</span></p>
-  <p class="intro-text"><span><span style="color:rgba(0, 0, 0, 1)">I'm an </span><span style="color:rgba(255, 72, 40, 1)">Embedded Engineer,</span></span></p>
-  <p class="intro-text"><span><span style="color:rgba(238, 136, 34, 1)">Researcher,</span><span style="color:rgba(255, 255, 255, 1)"> </span><span style="color:rgba(0, 0, 0, 1)">and </span><span style="color:rgba(0, 128, 255, 1)">Cat Dad</span>.</span></p>
+    <p class="intro-text" style="padding-top: 10px;"><span>my name is <span style="text-decoration:underline">Elton Shih</span>.</span></p>
+    <p class="intro-text"><span><span style="color:rgba(0, 0, 0, 1)">i </span><span style="color:rgba(255, 72, 40, 1)">write code</span>, </span><span style="color:rgba(238, 136, 34, 1)"> build stuff</span>, 
+        <span style="color:rgba(255, 255, 255, 1)"> </span></span></p>
+    <p class="intro-text"><span><span style="color:rgba(0, 0, 0, 1)">and </span><span
+                style="color:rgba(0, 128, 255, 1)">do research</span>.</span>
+    </p>
 </span>
 
-<div class="no-copy" style="max-height: 100%; max-width: 100%; padding-top: 30px;padding-bottom: 10px;padding-left: 0px;display: flex; gap: 10px; align-items: center;">
-    <div style="width: auto; height: 65%; display: flex; justify-content: center; align-items: center; "><img src="/assets/images/symbols/a.png" style="width: 65%; height: auto; center;"></div>
-    <div style="width: auto; height: 65%; display: flex; justify-content: center; align-items: center; "><img src="/assets/images/symbols/b.png" style="width: 65%; height: auto; center;"></div>    
-    <div style="width: auto; height: 65%; display: flex; justify-content: center; align-items: center; "><img src="/assets/images/symbols/c.png" style="width: 65%; height: auto; center;"></div>    
-    <div style="width: auto; height: 65%; display: flex; justify-content: center; align-items: center; "><img src="/assets/images/symbols/d.png" style="width: 65%; height: auto; center;"></div>    
-    <div style="width: auto; height: 65%; display: flex; justify-content: center; align-items: center; "><img src="/assets/images/symbols/e.png" style="width: 65%; height: auto; center;"></div>    
+<div class="no-copy"
+    style="max-height: 100%; max-width: 100%; padding-top: 30px;padding-bottom: 10px;padding-left: 0px;display: flex; gap: 10px; align-items: center;">
+    <div style="width: auto; height: 65%; display: flex; justify-content: center; align-items: center; "><img
+            src="/assets/images/symbols/a.png" style="width: 65%; height: auto; center;"></div>
+    <div style="width: auto; height: 65%; display: flex; justify-content: center; align-items: center; "><img
+            src="/assets/images/symbols/b.png" style="width: 65%; height: auto; center;"></div>
+    <div style="width: auto; height: 65%; display: flex; justify-content: center; align-items: center; "><img
+            src="/assets/images/symbols/c.png" style="width: 65%; height: auto; center;"></div>
+    <div style="width: auto; height: 65%; display: flex; justify-content: center; align-items: center; "><img
+            src="/assets/images/symbols/d.png" style="width: 65%; height: auto; center;"></div>
+    <div style="width: auto; height: 65%; display: flex; justify-content: center; align-items: center; "><img
+            src="/assets/images/symbols/e.png" style="width: 65%; height: auto; center;"></div>
 </div>
 
 
 <div style="padding-top: 20px;padding-bottom: 10px;display: flex; gap: 4px; align-items: center;">
-    <span style="white-space: nowrap; display: inline-flex; align-items: center; height: 8px; width: 8px; background-color: #ffffff; color: #000000; box-shadow: currentcolor 0px 0px 0px 1px inset;"></span>
-    <span style="white-space: nowrap; display: inline-flex; align-items: center; height: 8px; width: 8px; background-color: #000000; color: #ffffff; font-size: 10px;"></span>
-    <hr style="background-color: rgb(255, 255, 255); border-bottom: 1px solid rgb(0, 0, 0); border-color: transparent transparent rgb(0, 0, 0); width: 100%;margin=0;">
-    <span style="display: inline-flex; align-items: center; padding: 2px 4px; border-radius: 0px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); box-shadow: currentcolor 0px 0px 0px 1px inset; font-size: 10px; white-space: nowrap;">Taipei</span>
-    <span style="display: inline-flex; align-items: center; padding: 2px 4px; border-radius: 0px; background-color: #000000; color: #ffffff; box-shadow: currentcolor 0px 0px 0px 1px inset; font-size: 10px; white-space: nowrap;">Sydney</span>
-    <span style="display: inline-flex; align-items: center; padding: 2px 4px; border-radius: 0px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); box-shadow: currentcolor 0px 0px 0px 1px inset; font-size: 10px; white-space: nowrap;">Ithaca</span>
+    <span
+        style="white-space: nowrap; display: inline-flex; align-items: center; height: 8px; width: 8px; background-color: #ffffff; color: #000000; box-shadow: currentcolor 0px 0px 0px 1px inset;"></span>
+    <span
+        style="white-space: nowrap; display: inline-flex; align-items: center; height: 8px; width: 8px; background-color: #000000; color: #ffffff; font-size: 10px;"></span>
+    <hr
+        style="background-color: rgb(255, 255, 255); border-bottom: 1px solid rgb(0, 0, 0); border-color: transparent transparent rgb(0, 0, 0); width: 100%;margin=0;">
+    <span
+        style="display: inline-flex; align-items: center; padding: 2px 4px; border-radius: 0px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); box-shadow: currentcolor 0px 0px 0px 1px inset; font-size: 10px; white-space: nowrap;">Taipei</span>
+    <span
+        style="display: inline-flex; align-items: center; padding: 2px 4px; border-radius: 0px; background-color: #000000; color: #ffffff; box-shadow: currentcolor 0px 0px 0px 1px inset; font-size: 10px; white-space: nowrap;">Sydney</span>
+    <span
+        style="display: inline-flex; align-items: center; padding: 2px 4px; border-radius: 0px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); box-shadow: currentcolor 0px 0px 0px 1px inset; font-size: 10px; white-space: nowrap;">Ithaca</span>
 </div>
 
 
@@ -126,17 +141,20 @@ author_profile: true
 <!-- ==================================================== -->
 <div style="padding-bottom: 15px;"></div>
 <div class="responsive-container">
-    <div class="no-copy banished-on-mobile" style="display: flex; align-items: center; justify-content: center; width: 100%; aspect-ratio: 6 / 3; min-height: 40px; box-shadow: currentcolor 0px 0px 0px 1px inset; background: repeating-radial-gradient(circle at 100% center, currentcolor, currentcolor 1px, transparent 1px, transparent 6px);">
+    <div class="no-copy banished-on-mobile"
+        style="display: flex; align-items: center; justify-content: center; width: 100%; aspect-ratio: 6 / 3; min-height: 40px; box-shadow: currentcolor 0px 0px 0px 1px inset; background: repeating-radial-gradient(circle at 100% center, currentcolor, currentcolor 1px, transparent 1px, transparent 6px);">
         <img src="" alt="本当に、楽しんでください" style="max-width: 100%; height: auto;">
     </div>
     <div style="text-align: right; color: #1a40ff; font-family: 'Graphik-Italic'; font-size: 18px; line-height: 1.6;">
-        <p style="margin-top: 0px; margin-bottom: 0px;"> <span style="font-family: 'Graphik-Bold';font-size: large;">Elton</span>
-          is a Taiwanese-Australian engineer currently based in Sydney, Australia. He works as a research engineer at Audinate,
-          the maker of Dante audio networking. Elton's work spans the domains of <u>computer systems</u>, <u>architecture</u>, and <u>embedded systems</u>.
-          He used to teach computing systems courses at UNSW Sydney. As of Fall 2024, Elton will be starting a Ph.D. in Electrical
-          and Computer Engineering at Cornell University in the CSL lab. Reach out if you're interested in his work or just
-          want to chat about tech, music, or cats.
-        <!-- is the alias of <u>Elton Shih</u>, a Taiwanese-Australian Engineer based in Ithaca, New York.
+        <p style="margin-top: 0px; margin-bottom: 0px;"> <span
+                style="font-family: 'Graphik-Bold';font-size: large;">Elton</span>
+            is a Taiwanese-Australian engineer currently based in Sydney, Australia. He works as a research engineer at
+            Audinate, the maker of Dante audio networking. Elton's work spans the domains of <u>computer systems</u>,
+            <u>architecture</u>, and <u>embedded systems</u>.
+            He used to teach computing systems courses at UNSW Sydney. As of Fall 2024, Elton will be starting a Ph.D.
+            in Electrical and Computer Engineering at Cornell University in the CSL lab. Reach out if you're interested
+            in his work or just want to have a chat.
+            <!-- is the alias of <u>Elton Shih</u>, a Taiwanese-Australian Engineer based in Ithaca, New York.
         He is currently pursing a Ph.D. in Electrical and Computer Engineering at Cornell University in the CSL lab.
         Prior to the ongoing Ph.D. stint, Elton was a Research Engineer at Audinate and taught computing systems courses at UNSW Sydney.
         Reach out if you're interested in his work or just want to chat about tech, music, or cats.
@@ -145,14 +163,20 @@ author_profile: true
 </div>
 
 <div style="padding-top: 15px;padding-bottom: 10px;display: flex; gap: 4px; align-items: center;">
-  <span style="display: inline-flex; align-items: center; padding: 2px 4px; border-radius: 0px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); box-shadow: currentcolor 0px 0px 0px 1px inset; font-size: 10px; white-space: nowrap;">Cayuga</span>
-  <span style="display: inline-flex; align-items: center; padding: 2px 4px; border-radius: 0px; background-color: #000000; color: #ffffff; box-shadow: currentcolor 0px 0px 0px 1px inset; font-size: 10px; white-space: nowrap;">Gadigal</span>
-  <span style="display: inline-flex; align-items: center; padding: 2px 4px; border-radius: 0px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); box-shadow: currentcolor 0px 0px 0px 1px inset; font-size: 10px; white-space: nowrap;">Ketagalan</span>
+    <span
+        style="display: inline-flex; align-items: center; padding: 2px 4px; border-radius: 0px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); box-shadow: currentcolor 0px 0px 0px 1px inset; font-size: 10px; white-space: nowrap;">Cayuga</span>
+    <span
+        style="display: inline-flex; align-items: center; padding: 2px 4px; border-radius: 0px; background-color: #000000; color: #ffffff; box-shadow: currentcolor 0px 0px 0px 1px inset; font-size: 10px; white-space: nowrap;">Gadigal</span>
+    <span
+        style="display: inline-flex; align-items: center; padding: 2px 4px; border-radius: 0px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); box-shadow: currentcolor 0px 0px 0px 1px inset; font-size: 10px; white-space: nowrap;">Ketagalan</span>
 
-  <hr style="background-color: rgb(255, 255, 255); border-bottom: 1px solid rgb(0, 0, 0); border-color: transparent transparent rgb(0, 0, 0); width: 100%;margin=0;">
+    <hr
+        style="background-color: rgb(255, 255, 255); border-bottom: 1px solid rgb(0, 0, 0); border-color: transparent transparent rgb(0, 0, 0); width: 100%;margin=0;">
 
-  <span style="white-space: nowrap; display: inline-flex; align-items: center; height: 8px; width: 8px; background-color: #000000; color: #ffffff; font-size: 10px;"></span>
-  <span style="white-space: nowrap; display: inline-flex; align-items: center; height: 8px; width: 8px; background-color: #ffffff; color: #000000; box-shadow: currentcolor 0px 0px 0px 1px inset;"></span>
+    <span
+        style="white-space: nowrap; display: inline-flex; align-items: center; height: 8px; width: 8px; background-color: #000000; color: #ffffff; font-size: 10px;"></span>
+    <span
+        style="white-space: nowrap; display: inline-flex; align-items: center; height: 8px; width: 8px; background-color: #ffffff; color: #000000; box-shadow: currentcolor 0px 0px 0px 1px inset;"></span>
 
 </div>
 
@@ -165,36 +189,45 @@ author_profile: true
 <h1 class="index_section">EXPERIENCE</h1>
 
 <div style="margin-top: 4px; display: flex; flex-direction: column; gap: 0px;">
-  <div style="display: flex; justify-content: space-between; align-items: center; ">
-      <div><strong>Audinate, CTO Office</strong></div> <span style="font-family:'SuperWoobly';text-align: right; flex: 0 0 auto;"><em><strong>Sydney, Aus</strong></em></span>
-  </div>
-  <div style="color: #1a40ff; display: flex; justify-content: space-between; align-items: center;">
-      <div>Research Engineer II</div> <span style="text-align: right; flex: 0 0 auto;"><em>Aug 2023 - Present</em></span>
-  </div>
-  <div style="display: flex; justify-content: space-between; align-items: center;">
-      <div>Research Engineer I</div> <span style="text-align: right; flex: 0 0 auto;"><em>Jan 2022 - Jul 2023</em></span>
-  </div>
-  <div style="display: flex; justify-content: space-between; align-items: center; ">
-      <div>R&D Intern</div> <span style="text-align: right; flex: 0 0 auto;"><em>2019 / 2020 / 2021</em></span>
-  </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; ">
+        <div><strong>Audinate, CTO Office</strong></div> <span
+            style="font-family:'SuperWoobly';text-align: right; flex: 0 0 auto;"><em><strong>Sydney,
+                    Aus</strong></em></span>
+    </div>
+    <div style="color: #1a40ff; display: flex; justify-content: space-between; align-items: center;">
+        <div>Research Engineer II</div> <span style="text-align: right; flex: 0 0 auto;"><em>Aug 2023 -
+                Present</em></span>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div>Research Engineer I</div> <span style="text-align: right; flex: 0 0 auto;"><em>Jan 2022 - Jul
+                2023</em></span>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; ">
+        <div>R&D Intern</div> <span style="text-align: right; flex: 0 0 auto;"><em>2019 / 2020 / 2021</em></span>
+    </div>
 </div>
 
 <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 0px;">
-  <div style="display: flex; justify-content: space-between; align-items: center; ">
-      <div><strong>UNSW, School of CSE</strong></div> <span style="font-family:'SuperWoobly';text-align: right; flex: 0 0 auto;"><em><strong>Sydney, Aus</strong></em></span>
-  </div>
-  <div style="color: #1a40ff; display: flex; justify-content: space-between; align-items: center;">
-      <div>Casual Academic</div> <span style="text-align: right; flex: 0 0 auto;"><em>Feb 2020 - Present</em></span>
-  </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; ">
+        <div><strong>UNSW, School of CSE</strong></div> <span
+            style="font-family:'SuperWoobly';text-align: right; flex: 0 0 auto;"><em><strong>Sydney,
+                    Aus</strong></em></span>
+    </div>
+    <div style="color: #1a40ff; display: flex; justify-content: space-between; align-items: center;">
+        <div>Casual Academic</div> <span style="text-align: right; flex: 0 0 auto;"><em>Feb 2020 - Present</em></span>
+    </div>
 </div>
 
 <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 0px;">
-  <div style="display: flex; justify-content: space-between; align-items: center; ">
-      <div><strong>UNSW, Embedded Systems Research Group</strong></div> <span style="font-family:'SuperWoobly';text-align: right; flex: 0 0 auto;"><em><strong>Sydney, Aus</strong></em></span>
-  </div>
-  <div style="display: flex; justify-content: space-between; align-items: center;">
-      <div>Undergraduate Researcher</div> <span style="text-align: right; flex: 0 0 auto;"><em>Nov 2020 - May 2022</em></span>
-  </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; ">
+        <div><strong>UNSW, Embedded Systems Research Group</strong></div> <span
+            style="font-family:'SuperWoobly';text-align: right; flex: 0 0 auto;"><em><strong>Sydney,
+                    Aus</strong></em></span>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div>Undergraduate Researcher</div> <span style="text-align: right; flex: 0 0 auto;"><em>Nov 2020 - May
+                2022</em></span>
+    </div>
 </div>
 
 <!-- ==================================================== -->
@@ -204,39 +237,56 @@ author_profile: true
 <h1 class="index_section">EDUCATION</h1>
 
 <div style="margin-top: 4px; display: flex; flex-direction: column; gap: 0px;">
-  <div style="display: flex; justify-content: space-between; align-items: center; ">
-      <div><strong>Cornell University</strong></div> <span style="font-family:'SuperWoobly';text-align: right; flex: 0 0 auto;"><em><strong>Ithaca, NY</strong></em></span>
-  </div>
-  <div style="display: flex; justify-content: space-between; align-items: center;">
-      <div>Ph.D. in Electrical and Computer Engineering</div> <span style="text-align: right; flex: 0 0 auto;"><em>2024 - ??</em></span>
-  </div>
-  <div style="display: flex; justify-content: space-between; align-items: top;">
-      <div>
-        <ul style="margin-top: 5px; margin-bottom: 0px; padding-left: 25px;">
-        <li style="margin-bottom: 0px;">Advisor: <a href="https://www.csl.cornell.edu/~cbatten/index.html">Prof. Christopher Batten</a></li>
-        <li style="margin-bottom: 0px;">Research Area: Computer Systems and Architecture</li>
-        </ul>
-      </div> <span class="no-copy" style="margin-top: 6px; text-align: right; flex: 0 0 auto;"><img src="assets/images/logo/cornell.svg" alt="Cornell logo" class="no-copy" width="80" height="auto" /></span>
-  </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; ">
+        <div><strong>Cornell University</strong></div> <span
+            style="font-family:'SuperWoobly';text-align: right; flex: 0 0 auto;"><em><strong>Ithaca,
+                    NY</strong></em></span>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div>Ph.D. in Electrical and Computer Engineering</div> <span
+            style="text-align: right; flex: 0 0 auto;"><em>2024 -
+                ??</em></span>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: top;">
+        <div>
+            <ul style="margin-top: 5px; margin-bottom: 0px; padding-left: 25px;">
+                <li style="margin-bottom: 0px;">Advisor: <a href="https://www.csl.cornell.edu/~cbatten/index.html">Prof.
+                        Christopher Batten</a></li>
+                <li style="margin-bottom: 0px;">Research Area: Computer Systems and Architecture</li>
+            </ul>
+        </div> <span class="no-copy" style="margin-top: 6px; text-align: right; flex: 0 0 auto;"><img
+                src="assets/images/logo/cornell.svg" alt="Cornell logo" class="no-copy" width="80"
+                height="auto" /></span>
+    </div>
 </div>
 
 <!-- <div style="padding-bottom: 20px;"></div> -->
 <div style="margin-top: 4px; display: flex; flex-direction: column; gap: 0px;">
-  <div style="display: flex; justify-content: space-between; align-items: center; ">
-      <div><strong>University of New South Wales (UNSW)</strong></div> <span style="font-family:'SuperWoobly';text-align: right; flex: 0 0 auto;"><em><strong>Sydney, Aus</strong></em></span>
-  </div>
-  <div style="margin-top: 4px; display: flex; justify-content: space-between; align-items: center;">
-      <div>B.Eng (Hons) in Computer Engineering</div> <span style="text-align: right; flex: 0 0 auto;"><em>2018 - 2021</em></span>
-  </div>
-  <div style="display: flex; justify-content: space-between; align-items: top;">
-      <div>
-        <ul style="margin-top: 5px; margin-bottom: 0px; padding-left: 25px;">
-        <li style="margin-bottom: 0px;">First Class Honours</li>
-        <li style="margin-bottom: 0px;">Thesis title: <em>"Hardware Accelerated Real-Time Selective Genome Sequencing"</em></a></li>
-        <li style="margin-bottom: 0px;">Advisor: <a href="https://www.sydney.edu.au/engineering/about/our-people/academic-staff/sri-parameswaran.html">Prof. Sri Parameswaran</a> <span style="font-size: 10.5px;"> (co-advised by <a href="https://www.unsw.edu.au/staff/hasindu-gamaarachchi">Dr. H. Gamaarachchi</a> & <a href="https://www.linkedin.com/in/hassaan-saadat-7947a3166">Dr. H. Saadat</a>)</span></li>
-        </ul>
-      </div><span class="no-copy" style="margin-top: 10px; text-align: right; flex: 0 0 auto;"><img src="assets/images/logo/unsw.png" alt="UNSW logo" class="no-copy" width="80" height="auto" /></span>
-  </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; ">
+        <div><strong>University of New South Wales (UNSW)</strong></div> <span
+            style="font-family:'SuperWoobly';text-align: right; flex: 0 0 auto;"><em><strong>Sydney,
+                    Aus</strong></em></span>
+    </div>
+    <div style="margin-top: 4px; display: flex; justify-content: space-between; align-items: center;">
+        <div>B.Eng (Hons) in Computer Engineering</div> <span style="text-align: right; flex: 0 0 auto;"><em>2018 -
+                2021</em></span>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: top;">
+        <div>
+            <ul style="margin-top: 5px; margin-bottom: 0px; padding-left: 25px;">
+                <li style="margin-bottom: 0px;">First Class Honours</li>
+                <li style="margin-bottom: 0px;">Thesis title: <em>"Hardware Accelerated Real-Time Selective Genome
+                        Sequencing"</em></a></li>
+                <li style="margin-bottom: 0px;">Advisor: <a
+                        href="https://www.sydney.edu.au/engineering/about/our-people/academic-staff/sri-parameswaran.html">Prof.
+                        Sri
+                        Parameswaran</a> <span style="font-size: 10.5px;"> (co-advised by <a
+                            href="https://www.unsw.edu.au/staff/hasindu-gamaarachchi">Dr. H. Gamaarachchi</a> & <a
+                            href="https://www.linkedin.com/in/hassaan-saadat-7947a3166">Dr. H. Saadat</a>)</span></li>
+            </ul>
+        </div><span class="no-copy" style="margin-top: 10px; text-align: right; flex: 0 0 auto;"><img
+                src="assets/images/logo/unsw.png" alt="UNSW logo" class="no-copy" width="80" height="auto" /></span>
+    </div>
 </div>
 
 <!-- ==================================================== -->
@@ -245,15 +295,18 @@ author_profile: true
 <div style="padding-bottom: 60px;"></div>
 <h1 class="index_section">HONOURS</h1>
 <div style="margin-top: 4px; display: flex; flex-direction: column; gap: 0px;">
-  <div style="display: flex; justify-content: space-between; align-items: center; ">
-      <div><strong>First Class Honours</strong>, UNSW Engineering</div> <span style="text-align: right; flex: 0 0 auto;"><em>2021</em></span>
-  </div>
-  <div style="margin-top: 2px; display: flex; justify-content: space-between; align-items: center; ">
-      <div><strong>Outstanding Undergraduate Thesis</strong>, UNSW CSE</div> <span style="text-align: right; flex: 0 0 auto;"><em>2021</em></span>
-  </div>
-  <div style="margin-top: 2px; display: flex; justify-content: space-between; align-items: center; ">
-      <div><strong>Dean's Honours List</strong>, UNSW Engineering</div> <span style="text-align: right; flex: 0 0 auto;"><em>2018/2019/2020</em></span>
-  </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; ">
+        <div><strong>First Class Honours</strong>, UNSW Engineering</div> <span
+            style="text-align: right; flex: 0 0 auto;"><em>2021</em></span>
+    </div>
+    <div style="margin-top: 2px; display: flex; justify-content: space-between; align-items: center; ">
+        <div><strong>Outstanding Undergraduate Thesis</strong>, UNSW CSE</div> <span
+            style="text-align: right; flex: 0 0 auto;"><em>2021</em></span>
+    </div>
+    <div style="margin-top: 2px; display: flex; justify-content: space-between; align-items: center; ">
+        <div><strong>Dean's Honours List</strong>, UNSW Engineering</div> <span
+            style="text-align: right; flex: 0 0 auto;"><em>2018/2019/2020</em></span>
+    </div>
 </div>
 
 <!-- ==================================================== -->
@@ -263,48 +316,58 @@ author_profile: true
 <h1 class="index_section">TEACHING EXPERIENCE</h1>
 <!-- COMP3601 -->
 <div style="margin-top: 4px; display: flex; flex-direction: column; gap: 0px;">
-  <div style="display: flex; justify-content: space-between; align-items: center; ">
-      <div><strong><a href="https://www.handbook.unsw.edu.au/undergraduate/courses/2021/COMP3601?year=2022">COMP3601 Design Project A</a></strong></div> <span style="font-family:'SuperWoobly';text-align: right; flex: 0 0 auto;"><em>UNSW</em></span>
-  </div>
-  <div style="margin-top: 2px; display: flex; justify-content: space-between; align-items: center; ">
-      <div>Guest Lecturer</div> <span style="text-align: right; flex: 0 0 auto;"><em>23T3</em></span>
-  </div>
-  <div style="display: flex; justify-content: space-between; align-items: center; ">
-      <div>Course Coordinator & Guest Lecturer</div> <span style="text-align: right; flex: 0 0 auto;"><em>22T3</em></span>
-  </div>
-  <div style="display: flex; justify-content: space-between; align-items: center; ">
-      <div>Academic Tutor</div> <span style="text-align: right; flex: 0 0 auto;"><em>21T3</em></span>
-  </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; ">
+        <div><strong><a href="https://www.handbook.unsw.edu.au/undergraduate/courses/2021/COMP3601?year=2022">COMP3601
+                    Design Project A</a></strong></div> <span
+            style="font-family:'SuperWoobly';text-align: right; flex: 0 0 auto;"><em>UNSW</em></span>
+    </div>
+    <div style="margin-top: 2px; display: flex; justify-content: space-between; align-items: center; ">
+        <div>Guest Lecturer</div> <span style="text-align: right; flex: 0 0 auto;"><em>23T3</em></span>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; ">
+        <div>Course Coordinator & Guest Lecturer</div> <span
+            style="text-align: right; flex: 0 0 auto;"><em>22T3</em></span>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; ">
+        <div>Academic Tutor</div> <span style="text-align: right; flex: 0 0 auto;"><em>21T3</em></span>
+    </div>
 </div>
 
 <!-- DESN2000 -->
 <div style="margin-top: 12px; display: flex; flex-direction: column; gap: 0px;">
-  <div style="display: flex; justify-content: space-between; align-items: center; ">
-      <div><strong><a href="https://www.handbook.unsw.edu.au/undergraduate/courses/2023/DESN2000?year=2023">DESN2000 Eng. Design and Prof. Practice</a></strong></div> <span style="font-family:'SuperWoobly';text-align: right; flex: 0 0 auto;"><em>UNSW</em></span>
-  </div>
-  <div style="margin-top: 2px; display: flex; justify-content: space-between; align-items: center; ">
-      <div>Academic Tutor & Guest Lecturer</div> <span style="text-align: right; flex: 0 0 auto;"><em>23T2</em></span>
-  </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; ">
+        <div><strong><a href="https://www.handbook.unsw.edu.au/undergraduate/courses/2023/DESN2000?year=2023">DESN2000
+                    Eng.
+                    Design and Prof. Practice</a></strong></div> <span
+            style="font-family:'SuperWoobly';text-align: right; flex: 0 0 auto;"><em>UNSW</em></span>
+    </div>
+    <div style="margin-top: 2px; display: flex; justify-content: space-between; align-items: center; ">
+        <div>Academic Tutor & Guest Lecturer</div> <span style="text-align: right; flex: 0 0 auto;"><em>23T2</em></span>
+    </div>
 </div>
 
 <!-- COMP2121 -->
 <div style="margin-top: 12px; display: flex; flex-direction: column; gap: 0px;">
-  <div style="display: flex; justify-content: space-between; align-items: center; ">
-      <div><strong><a href="https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP2121?year=2020">COMP2121 Microprocessors and Interfacing</a></strong></div> <span style="font-family:'SuperWoobly';text-align: right; flex: 0 0 auto;"><em>UNSW</em></span>
-  </div>
-  <div style="margin-top: 2px; display: flex; justify-content: space-between; align-items: center; ">
-      <div>Academic Tutor</div> <span style="text-align: right; flex: 0 0 auto;"><em>20T1</em></span>
-  </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; ">
+        <div><strong><a href="https://www.handbook.unsw.edu.au/undergraduate/courses/2020/COMP2121?year=2020">COMP2121
+                    Microprocessors and Interfacing</a></strong></div> <span
+            style="font-family:'SuperWoobly';text-align: right; flex: 0 0 auto;"><em>UNSW</em></span>
+    </div>
+    <div style="margin-top: 2px; display: flex; justify-content: space-between; align-items: center; ">
+        <div>Academic Tutor</div> <span style="text-align: right; flex: 0 0 auto;"><em>20T1</em></span>
+    </div>
 </div>
 
 <!-- COMP1521 -->
 <div style="margin-top: 12px; display: flex; flex-direction: column; gap: 0px;">
-  <div style="display: flex; justify-content: space-between; align-items: center; ">
-      <div><strong><a href="https://www.handbook.unsw.edu.au/undergraduate/courses/2021/COMP1521/?year=2021">COMP1521 Computer Systems Fundamentals</a></strong></div> <span style="font-family:'SuperWoobly';text-align: right; flex: 0 0 auto;"><em>UNSW</em></span>
-  </div>
-  <div style="margin-top: 2px; display: flex; justify-content: space-between; align-items: center; ">
-      <div>Academic Tutor & Lab Assistant</div> <span style="text-align: right; flex: 0 0 auto;"><em>21T1</em></span>
-  </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; ">
+        <div><strong><a href="https://www.handbook.unsw.edu.au/undergraduate/courses/2021/COMP1521/?year=2021">COMP1521
+                    Computer Systems Fundamentals</a></strong></div> <span
+            style="font-family:'SuperWoobly';text-align: right; flex: 0 0 auto;"><em>UNSW</em></span>
+    </div>
+    <div style="margin-top: 2px; display: flex; justify-content: space-between; align-items: center; ">
+        <div>Academic Tutor & Lab Assistant</div> <span style="text-align: right; flex: 0 0 auto;"><em>21T1</em></span>
+    </div>
 </div>
 
 
@@ -315,12 +378,12 @@ author_profile: true
 <h1 class="index_section">PROFESSIONAL SERVICES</h1>
 
 <div style="margin-top: 4px; display: flex; flex-direction: column; gap: 0px;">
-  <div style="display: flex; justify-content: space-between; align-items: center; ">
-      <div><strong>External Reviewer</strong></div>
-  </div>
-  <div style="margin-top: 2px; display: flex; justify-content: space-between; align-items: center; ">
-      <div>ASP-DAC</div> <span style="text-align: right; flex: 0 0 auto;"><em>2024</em></span>
-  </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; ">
+        <div><strong>External Reviewer</strong></div>
+    </div>
+    <div style="margin-top: 2px; display: flex; justify-content: space-between; align-items: center; ">
+        <div>ASP-DAC</div> <span style="text-align: right; flex: 0 0 auto;"><em>2024</em></span>
+    </div>
 </div>
 
 <!-- ==================================================== -->
@@ -331,19 +394,19 @@ author_profile: true
 <h1 class="index_section" style="font-family: 'SuperWoobly';">MEOW</h1>
 <p style="font-family: 'SuperWoobly';"><strong>Second Author</strong><br>
 <div class="no-copy" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; padding: 0;">
-  <div style="overflow: hidden; border-radius: 8px; ">
-      <img src="/assets/images/naomi/naomi_a.jpeg" alt="naomi_a" style="width: 100%; height: auto; display: block;">
-  </div>
-  <div style="overflow: hidden; border-radius: 8px; ">
-      <img src="/assets/images/naomi/naomi_b.jpeg" alt="naomi_b" style="width: 100%; height: auto; display: block; ">
-  </div>
-  <div style="overflow: hidden; border-radius: 8px; ">
-      <img src="/assets/images/naomi/naomi_c.jpeg" alt="naomi_c" style="width: 100%; height: auto; display: block; ">
-  </div>
-  <div style="overflow: hidden; border-radius: 8px; ">
-      <img src="/assets/images/naomi/naomi_d.jpeg" alt="naomi_d" style="width: 100%; height: auto; display: block; ">
-  </div>
-  <div style="overflow: hidden; border-radius: 8px; ">
-      <img src="/assets/images/naomi/naomi_e.jpeg" alt="naomi_e" style="width: 100%; height: auto; display: block; ">
-  </div>
+    <div style="overflow: hidden; border-radius: 8px; ">
+        <img src="/assets/images/naomi/naomi_a.jpeg" alt="naomi_a" style="width: 100%; height: auto; display: block;">
+    </div>
+    <div style="overflow: hidden; border-radius: 8px; ">
+        <img src="/assets/images/naomi/naomi_b.jpeg" alt="naomi_b" style="width: 100%; height: auto; display: block; ">
+    </div>
+    <div style="overflow: hidden; border-radius: 8px; ">
+        <img src="/assets/images/naomi/naomi_c.jpeg" alt="naomi_c" style="width: 100%; height: auto; display: block; ">
+    </div>
+    <div style="overflow: hidden; border-radius: 8px; ">
+        <img src="/assets/images/naomi/naomi_d.jpeg" alt="naomi_d" style="width: 100%; height: auto; display: block; ">
+    </div>
+    <div style="overflow: hidden; border-radius: 8px; ">
+        <img src="/assets/images/naomi/naomi_e.jpeg" alt="naomi_e" style="width: 100%; height: auto; display: block; ">
+    </div>
 </div>
