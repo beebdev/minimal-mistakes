@@ -1,26 +1,21 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
-search: false
----
-
-@charset "utf-8";
+--- # Only the main Sass file needs front matter (the dashes are enough) search: false --- @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
 
 @font-face {
-  font-family: 'Austin';
-  src: url('/assets/fonts/Austin-Medium-Trial.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Austin';
+    src: url('/assets/fonts/Austin-Medium-Trial.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Graphik';
-  src: url('/assets/fonts/Graphik-Medium-Trial.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Graphik';
+    src: url('/assets/fonts/Graphik-Medium-Trial.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
@@ -31,86 +26,97 @@ search: false
 }
 
 @font-face {
-  font-family: 'Graphik-Italic';
-  src: url('/assets/fonts/GraphikCompact-RegularItalic-Trial.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Graphik-Italic';
+    src: url('/assets/fonts/GraphikCompact-RegularItalic-Trial.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'SuperWoobly';
-  src: url('/assets/fonts/SuperWoobly-8MJlz.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'SuperWoobly';
+    src: url('/assets/fonts/SuperWoobly-8MJlz.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 html {
-    cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0iIzFGNEU0NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiByeD0iNSIvPgo8L3N2Zz4='), auto;    font-size: 14px; // change to whatever
-  
+    cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0iIzFGNEU0NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiByeD0iNSIvPgo8L3N2Zz4='), auto;
+    font-size: 14px; // change to whatever
+
     @include breakpoint($medium) {
-      font-size: 12px; // change to whatever
+        font-size: 12px; // change to whatever
     }
-  
+
     @include breakpoint($large) {
-      font-size: 14px; // change to whatever
+        font-size: 14px; // change to whatever
     }
-  
+
     @include breakpoint($x-large) {
-      font-size: 16px; // change to whatever
+        font-size: 16px; // change to whatever
     }
 }
+
 a {
     text-decoration: none;
-    cursor: url('/assets/images/symbols/link.png'), auto;
-  }
+    cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0iI0ZGMDA5NiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiByeD0iMCIvPgo8L3N2Zz4='), auto;
+}
 
-p{
-  .hfill-right {
-    text-align: justify;
-  }
-  
-  .hfill-right::before {
-    content: '';
-    display: inline-block;
-    width: 100%;
-  }
-  
-  .hfill-right-text {
-    text-align: right;
-  }
+p {
+    .hfill-right {
+        text-align: justify;
+    }
+
+    .hfill-right::before {
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
+
+    .hfill-right-text {
+        text-align: right;
+    }
 }
 
 .fa-linkedin,
 .fa-linkedin-in {
-  color: $background-color;
+    color: $background-color;
 }
 
 
 // HEADER
 .masthead__menu-centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%; /* Ensure it takes the full height of the parent element */
-  font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* Ensure it takes the full height of the parent element */
+    font-size: 32px;
 }
 
 // FOOTER
 .my__footer {
-  display: flex;
-  justify-content: center;
-  align-items: left;
-  height: 100%; /* Ensure it takes the full height of the parent element */
-  font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    height: 100%;
+    /* Ensure it takes the full height of the parent element */
+    font-size: 12px;
 }
 
 
 .no-copy {
-  -webkit-user-drag: none; /* Prevents dragging on Webkit browsers */
-  user-drag: none; /* Prevents dragging on non-Webkit browsers */
-  -webkit-user-select: none; /* Prevents text selection on Webkit browsers */
-  -moz-user-select: none; /* Prevents text selection on Firefox */
-  -ms-user-select: none; /* Prevents text selection on Internet Explorer/Edge */
-  user-select: none; /* Prevents text selection on non-Webkit browsers */
-  pointer-events: none; /* Prevents click events such as right-click save image */
+    -webkit-user-drag: none;
+    /* Prevents dragging on Webkit browsers */
+    user-drag: none;
+    /* Prevents dragging on non-Webkit browsers */
+    -webkit-user-select: none;
+    /* Prevents text selection on Webkit browsers */
+    -moz-user-select: none;
+    /* Prevents text selection on Firefox */
+    -ms-user-select: none;
+    /* Prevents text selection on Internet Explorer/Edge */
+    user-select: none;
+    /* Prevents text selection on non-Webkit browsers */
+    pointer-events: none;
+    /* Prevents click events such as right-click save image */
 }
